@@ -1,0 +1,98 @@
+//*** Table of Contents //
+// 1) Fonts
+// 2) Colors
+// 3) Mixins
+// 4) Media All Queries
+//    a) Setup
+//    b) Base Styles
+//    c) Header & Navigation
+//    d) Footer
+//     e) Other Layout Styles
+// 5) Large Device Media Queries
+// 6) Small Device Media Queries
+
+
+//  **** Fonts **** //
+@import 'fonts';
+
+//  **** Colors **** //
+@import 'colors';
+
+// **** Mixins **** //
+@mixin image-replacement {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@mixin font-regular {
+  font-family: 'proxima_nova_rgregular';
+}
+
+@mixin font-light {
+  font-family: 'proxima_novalight';
+}
+
+@mixin font-semiBold {
+  font-family: 'proxima_novasemibold';
+}
+
+// **** Setup **** //
+
+// Box Model Hack 
+* {
+ -moz-box-sizing: border-box; /* Firexfox */
+ -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+ box-sizing: border-box; /* IE */
+}
+
+// Clear fix hack 
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right; 
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left; 
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+
+// **** --------------- BASE STYLES ----------------- *****//
+
+body, h1, h2, h3, h4 {
+  font-family: 'proxima_nova_rgregular', sans-serif;
+}
+
+body {
+  font-size: 100%;
+  width: 100%;
+  line-height: 1.4;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+// ****  HEADER & NAVIGATION ****//
+
+
+// **** SECTIONS **** //
+
+
+// **** FOOTER **** //
