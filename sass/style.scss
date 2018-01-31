@@ -19,34 +19,37 @@
 @import 'colors';
 
 // **** Mixins **** //
-@mixin image-replacement {
+@mixin imageReplacement {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
 }
 
-@mixin font-regular {
-  font-family: 'proxima_nova_rgregular';
+@mixin fontRegular {
+  font-family: 'proxima_nova_rgregular', Helvetica, Arial, sans-serif;
+  font-weight: normal;
 }
 
-@mixin font-light {
-  font-family: 'proxima_novalight';
+@mixin fontLight {
+  font-family: 'proxima_novalight', Helvetica, Arial, sans-serif;
+  font-weight: 200;
 }
 
-@mixin font-semiBold {
-  font-family: 'proxima_novasemibold';
+@mixin fontSemiBold {
+  font-family: 'proxima_novasemibold', Helvetica, Arial, sans-serif;
+  font-weight: 800;
 }
 
 // **** Setup **** //
 
-// Box Model Hack 
+// Box Model 
 * {
  -moz-box-sizing: border-box; /* Firexfox */
  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
  box-sizing: border-box; /* IE */
 }
 
-// Clear fix hack 
+// Clear fix 
 .clearfix:after {
   content: ".";
   display: block;
@@ -62,12 +65,12 @@
 
 .alignright {
   float: right; 
-  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+  padding: 0 0 10px 10px;
 }
 
 .alignleft {
   float: left; 
-  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+  padding: 0 10px 10px 0;
 }
 
 
@@ -87,12 +90,71 @@ a {
   text-decoration: none;
 }
 
+h2 {
+  color: $dark-blue;
+  @include fontSemiBold;
+  font-size: 28px;
+}
 
 
 // ****  HEADER & NAVIGATION ****//
+#header {
+  background: url(../images/header_bg1_placeholder.png) no-repeat $purple-blue;
+  height: 800px;
+  background-size: 100%;
+}
 
+nav {
+  li {
+    float: left;
+    padding: 19px;
+    margin-top: 45px;
+    a {
+      text-decoration: none;
+      color: white;
+      letter-spacing: 0.8px;
+    }
+  }
+  #asi-logo {
+    padding-top: 25px;
+    img {
+      display: block;
+      width: 120px;
+      height: auto;
+    }
+  }
+}
 
 // **** SECTIONS **** //
 
+.aboutUs {
+  background: url(../images/aboutUs_bg.png) no-repeat $white-blue;
+  background-size: 100%;
+  background-position: 30px -75px;
+  height: 600px;
+  padding: 45px 0px;
+  .about-content {
+    margin-top: 20px;
+    line-height: 25px;
+    margin-bottom: 40px;
+    p {
+      color: $dark-blue;
+      @include fontLight;
+    }
+  }
+  .aboutInfo {
+    text-align: center;
+    .aboutNumber {
+      @include fontSemiBold;
+      font-size: 60px;
+      color: $main-blue;
+    }
+    .aboutNumberText {
+      @include fontLight;
+      font-size: 14px;
+      color: $main-blue;
+    }
+  }
+}//.aboutUs
 
 // **** FOOTER **** //
