@@ -106,54 +106,55 @@ h2 {
   font-family: 'proxima_novasemibold', Helvetica, Arial, sans-serif;
   font-weight: 800;
   font-size: 28px;
+  margin-top: 0px;
 }
 
-/* line 99, /Users/jasminechabra/Dropbox/Agilant/agilant_website/sass/style.scss */
+/* line 100, /Users/jasminechabra/Dropbox/Agilant/agilant_website/sass/style.scss */
 section {
-  padding: 40px 0px;
+  padding: 70px 0px;
 }
 
-/* line 103, /Users/jasminechabra/Dropbox/Agilant/agilant_website/sass/style.scss */
+/* line 104, /Users/jasminechabra/Dropbox/Agilant/agilant_website/sass/style.scss */
 p {
   font-family: 'proxima_novalight', Helvetica, Arial, sans-serif;
   font-weight: 200;
   font-size: 18px;
 }
 
-/* line 110, /Users/jasminechabra/Dropbox/Agilant/agilant_website/sass/style.scss */
+/* line 111, /Users/jasminechabra/Dropbox/Agilant/agilant_website/sass/style.scss */
 #header {
   background: url(../images/header_bg2_placeholder.png) no-repeat #0f113a;
   height: 800px;
   background-size: 100%;
 }
 
-/* line 117, /Users/jasminechabra/Dropbox/Agilant/agilant_website/sass/style.scss */
+/* line 118, /Users/jasminechabra/Dropbox/Agilant/agilant_website/sass/style.scss */
 nav li {
   float: left;
   padding: 19px;
   margin-top: 45px;
 }
 
-/* line 121, /Users/jasminechabra/Dropbox/Agilant/agilant_website/sass/style.scss */
+/* line 122, /Users/jasminechabra/Dropbox/Agilant/agilant_website/sass/style.scss */
 nav li a {
   text-decoration: none;
   color: white;
   letter-spacing: 0.8px;
 }
 
-/* line 127, /Users/jasminechabra/Dropbox/Agilant/agilant_website/sass/style.scss */
+/* line 128, /Users/jasminechabra/Dropbox/Agilant/agilant_website/sass/style.scss */
 nav #asi-logo {
   padding-top: 25px;
 }
 
-/* line 129, /Users/jasminechabra/Dropbox/Agilant/agilant_website/sass/style.scss */
+/* line 130, /Users/jasminechabra/Dropbox/Agilant/agilant_website/sass/style.scss */
 nav #asi-logo img {
   display: block;
   width: 120px;
   height: auto;
 }
 
-/* line 139, /Users/jasminechabra/Dropbox/Agilant/agilant_website/sass/style.scss */
+/* line 140, /Users/jasminechabra/Dropbox/Agilant/agilant_website/sass/style.scss */
 .aboutUs {
   background: url(../images/aboutUs_bg.png) no-repeat #f2f3f6;
   background-size: 100%;
@@ -161,9 +162,8 @@ nav #asi-logo img {
   height: 600px;
 }
 
-/* line 144, /Users/jasminechabra/Dropbox/Agilant/agilant_website/sass/style.scss */
+/* line 145, /Users/jasminechabra/Dropbox/Agilant/agilant_website/sass/style.scss */
 .aboutUs .about-content {
-  margin-top: 20px;
   line-height: 25px;
   margin-bottom: 40px;
 }
@@ -211,6 +211,27 @@ nav #asi-logo img {
 /* line 177, /Users/jasminechabra/Dropbox/Agilant/agilant_website/sass/style.scss */
 .ourSolutions h2 {
   color: #fff;
+}
+
+/* line 180, /Users/jasminechabra/Dropbox/Agilant/agilant_website/sass/style.scss */
+.ourSolutions .solution-box {
+  margin-top: 30px;
+}
+
+/* line 182, /Users/jasminechabra/Dropbox/Agilant/agilant_website/sass/style.scss */
+.ourSolutions .solution-box p {
+  font-size: 15px;
+  padding-right: 50px;
+}
+
+/* line 187, /Users/jasminechabra/Dropbox/Agilant/agilant_website/sass/style.scss */
+.ourSolutions .solution-box .solutionIcon img {
+  width: 50px;
+}
+
+/* line 192, /Users/jasminechabra/Dropbox/Agilant/agilant_website/sass/style.scss */
+.ourSolutions .solution-box .design_border img {
+  width: 35px;
 }
 
 /*# sourceMappingURL=../css/style.map */
