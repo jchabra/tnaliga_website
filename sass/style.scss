@@ -185,7 +185,7 @@ nav {
     }
     .solutionIcon {
       img {
-        width: 0px;
+        width: 50px;
       }
     }
     .design_border {
@@ -195,5 +195,26 @@ nav {
     }
   }//.solution-box
 }//.ourSolutions
+
+.ourVerticals {
+  background-color: $white-blue;
+  .vertical-box {
+    margin-top: 30px;
+    p {
+      font-size: 15px;
+      padding-right: 50px;
+    }
+    .verticalIcon {
+      img {
+        width: 50px;
+      }
+    }
+    .design_border {
+      img {
+        width: 35px;
+      }
+    }
+  }//.solution-box
+}//.ourVerticals
 
 // **** FOOTER **** //

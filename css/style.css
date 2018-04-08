@@ -64,6 +64,16 @@ nav #asi-logo img { display: block; width: 120px; height: auto; }
 
 .ourSolutions .solution-box p { font-size: 15px; padding-right: 50px; }
 
-.ourSolutions .solution-box .solutionIcon img { width: 0px; }
+.ourSolutions .solution-box .solutionIcon img { width: 50px; }
 
 .ourSolutions .solution-box .design_border img { width: 35px; }
+
+.ourVerticals { background-color: #f2f3f6; }
+
+.ourVerticals .vertical-box { margin-top: 30px; }
+
+.ourVerticals .vertical-box p { font-size: 15px; padding-right: 50px; }
+
+.ourVerticals .vertical-box .verticalIcon img { width: 50px; }
+
+.ourVerticals .vertical-box .design_border img { width: 35px; }
