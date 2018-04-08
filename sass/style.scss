@@ -20,43 +20,33 @@
 
 // **** Mixins **** //
 @mixin imageReplacement {
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
+text-indent: 100%;
+white-space: nowrap;
+overflow: hidden;
 }
 
 @mixin fontRegular {
-  font-family: 'proxima_nova_rgregular', Helvetica, Arial, sans-serif;
-  font-weight: normal;
+font-family: 'proxima_nova_rgregular', Helvetica, Arial, sans-serif;
+font-weight: normal;
 }
 
 @mixin fontLight {
-  font-family: 'proxima_novalight', Helvetica, Arial, sans-serif;
-  font-weight: 200;
+font-family: 'proxima_novalight', Helvetica, Arial, sans-serif;
+font-weight: 200;
 }
 
 @mixin fontSemiBold {
-  font-family: 'proxima_novasemibold', Helvetica, Arial, sans-serif;
-  font-weight: 800;
+font-family: 'proxima_novasemibold', Helvetica, Arial, sans-serif;
+font-weight: 800;
 }
 
 // **** Setup **** //
 
 // Box Model 
 * {
- -moz-box-sizing: border-box; /* Firexfox */
- -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
- box-sizing: border-box; /* IE */
-}
-
-// Clear fix 
-.clearfix:after {
-  content: ".";
-  display: block;
-  clear: both;
-  visibility: hidden;
-  line-height: 0;
-  height: 0;
+-moz-box-sizing: border-box; /* Firexfox */
+-webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+box-sizing: border-box; /* IE */
 }
 
 .clear {
@@ -112,6 +102,34 @@ p {
   background: url(../images/header_bg2_placeholder.png) no-repeat $really-dark-blue;
   height: 800px;
   background-size: 100%;
+  .headerContent {
+    h1 {
+      font-size: 60px;
+      margin-top: 100px;
+      margin-bottom: 10px;
+      color: $white;
+    }
+    h5 {
+      font-size: 40px;
+      color: $white;
+      margin-top: 5px;
+      margin-bottom: 40px;
+      @include fontLight;
+    }
+    a.learnMore {
+      background-color: $red-pink;
+      border-radius: 30px;
+      padding: 13px 7px;
+      max-width: 180px;
+      display: block;
+      color: $white;
+      display: block;
+      text-align: center;
+      &:hover {
+        background-color: $red-pink-dark;
+      }
+    }
+  }
 }
 
 nav {
@@ -140,8 +158,8 @@ nav {
 .aboutUs {
   background: url(../images/aboutUs_bg.png) no-repeat $white-blue;
   background-size: 100%;
-  background-position: 30px -75px;
-  height: 600px;
+  // background-position: 30px -75px;
+  // height: 600px;
   .about-content {
     line-height: 25px;
     margin-bottom: 40px;
@@ -153,11 +171,28 @@ nav {
   }
   .aboutInfo {
     text-align: center;
-    .aboutIcon {
-      img {
-        width: 50px;
+    margin-bottom: 40px;
+    .aboutIconSection {
+      .aboutIcon {
+        img {
+          width: 50px;
+        }
       }
-    }
+      .design_border {
+        img {
+          width: 35px;
+        }
+      }
+      &.mapIcon {
+        margin-left: 90px; 
+      }
+      &.consultingIcon {
+        margin-left: 140px; 
+      }
+      &.calendarIcon {
+        margin-left: 47px; 
+      }
+    }//.aboutIconSection
     .aboutNumber {
       @include fontSemiBold;
       font-size: 75px;
@@ -169,52 +204,90 @@ nav {
       color: $dark-blue;
     }
   }
-}//.aboutUs
+  }//.aboutUs
 
-.ourSolutions {
-  background-color: $dark-blue;
-  color: $white;
-  h2 {
+  .ourSolutions {
+    background-color: $dark-blue;
     color: $white;
-  }
-  .solution-box {
-    margin-top: 30px;
-    p {
-      font-size: 15px;
-      padding-right: 50px;
+    h2 {
+      color: $white;
     }
-    .solutionIcon {
-      img {
-        width: 50px;
+    .solution-box {
+      margin-top: 30px;
+      p {
+        font-size: 15px;
+        padding-right: 50px;
       }
-    }
-    .design_border {
-      img {
-        width: 35px;
+      .solutionIcon {
+        img {
+          width: 50px;
+        }
       }
-    }
-  }//.solution-box
-}//.ourSolutions
+      .design_border {
+        img {
+          width: 35px;
+        }
+      }
+      }//.solution-box
+      }//.ourSolutions
 
-.ourVerticals {
-  background-color: $white-blue;
-  .vertical-box {
-    margin-top: 30px;
-    p {
-      font-size: 15px;
-      padding-right: 50px;
-    }
-    .verticalIcon {
-      img {
-        width: 50px;
-      }
-    }
-    .design_border {
-      img {
-        width: 35px;
-      }
-    }
-  }//.solution-box
-}//.ourVerticals
+      .ourVerticals {
+        background-color: $white-blue;
+        .vertical-box {
+          margin-top: 30px;
+          p {
+            font-size: 15px;
+            padding-right: 50px;
+          }
+          .verticalIcon {
+            img {
+              width: 50px;
+            }
+          }
+          .design_border {
+            img {
+              width: 35px;
+            }
+          }
+          }//.solution-box
+          }//.ourVerticals
 
-// **** FOOTER **** //
+          .ourTestimonials {
+            background-color: $white;
+            .testimonial-box {
+              background-color: $blue-grey;
+              padding: 30px 30px 60px 30px;
+              .quotes {
+                text-align: center;
+                img {
+                  width: 50px;
+                }
+              }
+              .test_author {
+                background-color: $main-blue-light;
+                border-radius: 30px;
+                padding: 10px 7px;
+                max-width: 250px;
+                display: block;
+                margin: auto;
+                margin-bottom: -81px;
+                margin-top: 50px;
+                border-bottom: 2px solid #ff3c32;
+                .personName {
+                  color: $white;
+                  text-align: center;
+                  display:block;
+                  font-size: 14px;
+                }
+                .personTitle {
+                  color: $white;
+                  text-align: center;
+                  display:block;
+                  @include fontLight;
+                  font-size: 11px;
+                }
+              }
+              }//.testimonial-box
+            }
+
+            // **** FOOTER **** //
