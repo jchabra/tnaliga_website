@@ -105,3 +105,19 @@ nav #asi-logo img { display: block; width: 120px; height: auto; }
 .ourTestimonials .testimonial-box .test_author .personName { color: #fff; text-align: center; display: block; font-size: 14px; }
 
 .ourTestimonials .testimonial-box .test_author .personTitle { color: #fff; text-align: center; display: block; font-family: 'proxima_novalight', Helvetica, Arial, sans-serif; font-weight: 200; font-size: 11px; }
+
+.ourPartners { background: url(../images/partners_bg.png) no-repeat #2e3192; background-size: 110%; }
+
+.ourPartners h2 { color: #fff; margin-bottom: 50px; }
+
+.ourPartners .partner_logo img { display: block; margin: auto; margin-bottom: 50px; max-height: 65px; }
+
+.ourPartners .partner_logo.vmware { margin-top: 20px; }
+
+.ourPartners .partner_logo.microsoft { margin-top: 15px; }
+
+.ourPartners .partner_logo.oracle { margin-top: 15px; }
+
+.ourPartners .partner_logo.lexmark { margin-top: 15px; }
+
+.ourPartners .partner_logo.azure { margin-top: 20px; }
