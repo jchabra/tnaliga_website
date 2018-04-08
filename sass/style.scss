@@ -87,7 +87,7 @@ font-size: 28px;
 margin-top: 0px;
 }
 
-section {
+section, footer {
 padding: 70px 0px;
 }
 
@@ -319,6 +319,24 @@ background-color: $white;
     &.azure {
       margin-top: 20px;
     }
+  }
+}
+
+footer {
+  font-size: 14px;
+  .footer_heading {
+    color: $dark-blue;
+    @include fontSemiBold;
+  }
+  .contact_info {
+    color: $blue-grey-dark;
+    @include fontLight;
+    b {
+      @include fontSemiBold;
+    }
+  }
+  .locations_list {
+    color: $blue-grey-dark;
   }
 }
 

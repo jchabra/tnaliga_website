@@ -26,7 +26,7 @@ a { text-decoration: none; }
 
 h2 { color: #2e3192; font-family: 'proxima_novasemibold', Helvetica, Arial, sans-serif; font-weight: 800; font-size: 28px; margin-top: 0px; }
 
-section { padding: 70px 0px; }
+section, footer { padding: 70px 0px; }
 
 p { font-family: 'proxima_novalight', Helvetica, Arial, sans-serif; font-weight: 200; font-size: 18px; }
 
@@ -121,3 +121,13 @@ nav #asi-logo img { display: block; width: 120px; height: auto; }
 .ourPartners .partner_logo.lexmark { margin-top: 15px; }
 
 .ourPartners .partner_logo.azure { margin-top: 20px; }
+
+footer { font-size: 14px; }
+
+footer .footer_heading { color: #2e3192; font-family: 'proxima_novasemibold', Helvetica, Arial, sans-serif; font-weight: 800; }
+
+footer .contact_info { color: #818bac; font-family: 'proxima_novalight', Helvetica, Arial, sans-serif; font-weight: 200; }
+
+footer .contact_info b { font-family: 'proxima_novasemibold', Helvetica, Arial, sans-serif; font-weight: 800; }
+
+footer .locations_list { color: #818bac; }
