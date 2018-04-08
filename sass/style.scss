@@ -96,10 +96,19 @@ h2 {
   font-size: 28px;
 }
 
+section {
+  padding: 40px 0px;
+}
+
+p {
+  @include fontLight;
+  font-size: 18px;
+}
+
 
 // ****  HEADER & NAVIGATION ****//
 #header {
-  background: url(../images/header_bg1_placeholder.png) no-repeat $purple-blue;
+  background: url(../images/header_bg2_placeholder.png) no-repeat $really-dark-blue;
   height: 800px;
   background-size: 100%;
 }
@@ -132,29 +141,43 @@ nav {
   background-size: 100%;
   background-position: 30px -75px;
   height: 600px;
-  padding: 45px 0px;
   .about-content {
     margin-top: 20px;
     line-height: 25px;
     margin-bottom: 40px;
     p {
-      color: $dark-blue;
+      color: $main-blue;
       @include fontLight;
+      font-size: 18px;
     }
   }
   .aboutInfo {
     text-align: center;
+    .aboutIcon {
+      img {
+        width: 50px;
+      }
+    }
     .aboutNumber {
       @include fontSemiBold;
-      font-size: 60px;
-      color: $main-blue;
+      font-size: 75px;
+      color: $dark-blue;
     }
     .aboutNumberText {
       @include fontLight;
-      font-size: 14px;
-      color: $main-blue;
+      font-size: 16px;
+      color: $dark-blue;
     }
   }
 }//.aboutUs
+
+.ourSolutions {
+  background-color: $dark-blue;
+  color: $white;
+  h2 {
+    color: $white;
+  }
+
+}//.ourSolutions
 
 // **** FOOTER **** //

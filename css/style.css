@@ -46,7 +46,7 @@
   font-style: normal;
 }
 
-/* line 46, /Users/jasminechabra/Dropbox/Agilant/agilant-site/sass/style.scss */
+/* line 46, /Users/jasminechabra/Dropbox/Agilant/agilant_website/sass/style.scss */
 * {
   -moz-box-sizing: border-box;
   /* Firexfox */
@@ -56,7 +56,7 @@
   /* IE */
 }
 
-/* line 53, /Users/jasminechabra/Dropbox/Agilant/agilant-site/sass/style.scss */
+/* line 53, /Users/jasminechabra/Dropbox/Agilant/agilant_website/sass/style.scss */
 .clearfix:after {
   content: ".";
   display: block;
@@ -66,41 +66,41 @@
   height: 0;
 }
 
-/* line 62, /Users/jasminechabra/Dropbox/Agilant/agilant-site/sass/style.scss */
+/* line 62, /Users/jasminechabra/Dropbox/Agilant/agilant_website/sass/style.scss */
 .clear {
   clear: both;
 }
 
-/* line 66, /Users/jasminechabra/Dropbox/Agilant/agilant-site/sass/style.scss */
+/* line 66, /Users/jasminechabra/Dropbox/Agilant/agilant_website/sass/style.scss */
 .alignright {
   float: right;
   padding: 0 0 10px 10px;
 }
 
-/* line 71, /Users/jasminechabra/Dropbox/Agilant/agilant-site/sass/style.scss */
+/* line 71, /Users/jasminechabra/Dropbox/Agilant/agilant_website/sass/style.scss */
 .alignleft {
   float: left;
   padding: 0 10px 10px 0;
 }
 
-/* line 79, /Users/jasminechabra/Dropbox/Agilant/agilant-site/sass/style.scss */
+/* line 79, /Users/jasminechabra/Dropbox/Agilant/agilant_website/sass/style.scss */
 body, h1, h2, h3, h4 {
   font-family: 'proxima_nova_rgregular', sans-serif;
 }
 
-/* line 83, /Users/jasminechabra/Dropbox/Agilant/agilant-site/sass/style.scss */
+/* line 83, /Users/jasminechabra/Dropbox/Agilant/agilant_website/sass/style.scss */
 body {
   font-size: 100%;
   width: 100%;
   line-height: 1.4;
 }
 
-/* line 89, /Users/jasminechabra/Dropbox/Agilant/agilant-site/sass/style.scss */
+/* line 89, /Users/jasminechabra/Dropbox/Agilant/agilant_website/sass/style.scss */
 a {
   text-decoration: none;
 }
 
-/* line 93, /Users/jasminechabra/Dropbox/Agilant/agilant-site/sass/style.scss */
+/* line 93, /Users/jasminechabra/Dropbox/Agilant/agilant_website/sass/style.scss */
 h2 {
   color: #2e3192;
   font-family: 'proxima_novasemibold', Helvetica, Arial, sans-serif;
@@ -108,81 +108,109 @@ h2 {
   font-size: 28px;
 }
 
-/* line 101, /Users/jasminechabra/Dropbox/Agilant/agilant-site/sass/style.scss */
+/* line 99, /Users/jasminechabra/Dropbox/Agilant/agilant_website/sass/style.scss */
+section {
+  padding: 40px 0px;
+}
+
+/* line 103, /Users/jasminechabra/Dropbox/Agilant/agilant_website/sass/style.scss */
+p {
+  font-family: 'proxima_novalight', Helvetica, Arial, sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+}
+
+/* line 110, /Users/jasminechabra/Dropbox/Agilant/agilant_website/sass/style.scss */
 #header {
-  background: url(../images/header_bg1_placeholder.png) no-repeat #23233c;
+  background: url(../images/header_bg2_placeholder.png) no-repeat #0f113a;
   height: 800px;
   background-size: 100%;
 }
 
-/* line 108, /Users/jasminechabra/Dropbox/Agilant/agilant-site/sass/style.scss */
+/* line 117, /Users/jasminechabra/Dropbox/Agilant/agilant_website/sass/style.scss */
 nav li {
   float: left;
   padding: 19px;
   margin-top: 45px;
 }
 
-/* line 112, /Users/jasminechabra/Dropbox/Agilant/agilant-site/sass/style.scss */
+/* line 121, /Users/jasminechabra/Dropbox/Agilant/agilant_website/sass/style.scss */
 nav li a {
   text-decoration: none;
   color: white;
   letter-spacing: 0.8px;
 }
 
-/* line 118, /Users/jasminechabra/Dropbox/Agilant/agilant-site/sass/style.scss */
+/* line 127, /Users/jasminechabra/Dropbox/Agilant/agilant_website/sass/style.scss */
 nav #asi-logo {
   padding-top: 25px;
 }
 
-/* line 120, /Users/jasminechabra/Dropbox/Agilant/agilant-site/sass/style.scss */
+/* line 129, /Users/jasminechabra/Dropbox/Agilant/agilant_website/sass/style.scss */
 nav #asi-logo img {
   display: block;
   width: 120px;
   height: auto;
 }
 
-/* line 130, /Users/jasminechabra/Dropbox/Agilant/agilant-site/sass/style.scss */
+/* line 139, /Users/jasminechabra/Dropbox/Agilant/agilant_website/sass/style.scss */
 .aboutUs {
   background: url(../images/aboutUs_bg.png) no-repeat #f2f3f6;
   background-size: 100%;
   background-position: 30px -75px;
   height: 600px;
-  padding: 45px 0px;
 }
 
-/* line 136, /Users/jasminechabra/Dropbox/Agilant/agilant-site/sass/style.scss */
+/* line 144, /Users/jasminechabra/Dropbox/Agilant/agilant_website/sass/style.scss */
 .aboutUs .about-content {
   margin-top: 20px;
   line-height: 25px;
   margin-bottom: 40px;
 }
 
-/* line 140, /Users/jasminechabra/Dropbox/Agilant/agilant-site/sass/style.scss */
+/* line 148, /Users/jasminechabra/Dropbox/Agilant/agilant_website/sass/style.scss */
 .aboutUs .about-content p {
-  color: #2e3192;
+  color: #2b47ad;
   font-family: 'proxima_novalight', Helvetica, Arial, sans-serif;
   font-weight: 200;
+  font-size: 18px;
 }
 
-/* line 145, /Users/jasminechabra/Dropbox/Agilant/agilant-site/sass/style.scss */
+/* line 154, /Users/jasminechabra/Dropbox/Agilant/agilant_website/sass/style.scss */
 .aboutUs .aboutInfo {
   text-align: center;
 }
 
-/* line 147, /Users/jasminechabra/Dropbox/Agilant/agilant-site/sass/style.scss */
+/* line 157, /Users/jasminechabra/Dropbox/Agilant/agilant_website/sass/style.scss */
+.aboutUs .aboutInfo .aboutIcon img {
+  width: 50px;
+}
+
+/* line 161, /Users/jasminechabra/Dropbox/Agilant/agilant_website/sass/style.scss */
 .aboutUs .aboutInfo .aboutNumber {
   font-family: 'proxima_novasemibold', Helvetica, Arial, sans-serif;
   font-weight: 800;
-  font-size: 60px;
-  color: #425cdb;
+  font-size: 75px;
+  color: #2e3192;
 }
 
-/* line 152, /Users/jasminechabra/Dropbox/Agilant/agilant-site/sass/style.scss */
+/* line 166, /Users/jasminechabra/Dropbox/Agilant/agilant_website/sass/style.scss */
 .aboutUs .aboutInfo .aboutNumberText {
   font-family: 'proxima_novalight', Helvetica, Arial, sans-serif;
   font-weight: 200;
-  font-size: 14px;
-  color: #425cdb;
+  font-size: 16px;
+  color: #2e3192;
+}
+
+/* line 174, /Users/jasminechabra/Dropbox/Agilant/agilant_website/sass/style.scss */
+.ourSolutions {
+  background-color: #2e3192;
+  color: #fff;
+}
+
+/* line 177, /Users/jasminechabra/Dropbox/Agilant/agilant_website/sass/style.scss */
+.ourSolutions h2 {
+  color: #fff;
 }
 
 /*# sourceMappingURL=../css/style.map */
