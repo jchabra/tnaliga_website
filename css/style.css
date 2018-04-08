@@ -1,237 +1,69 @@
-@font-face {
-  font-family: 'proxima_novalight_italic';
-  src: url("../fonts/proxima_nova_light_it-webfont.eot");
-  src: url("../fonts/proxima_nova_light_it-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima_nova_light_it-webfont.woff") format("woff"), url("../fonts/proxima_nova_light_it-webfont.ttf") format("truetype"), url("../fonts/proxima_nova_light_it-webfont.svg#proxima_novalight_italic") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
+@font-face { font-family: 'proxima_novalight_italic'; src: url("../fonts/proxima_nova_light_it-webfont.eot"); src: url("../fonts/proxima_nova_light_it-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima_nova_light_it-webfont.woff") format("woff"), url("../fonts/proxima_nova_light_it-webfont.ttf") format("truetype"), url("../fonts/proxima_nova_light_it-webfont.svg#proxima_novalight_italic") format("svg"); font-weight: normal; font-style: normal; }
 
-@font-face {
-  font-family: 'proxima_novalight';
-  src: url("../fonts/proxima_nova_light-webfont.eot");
-  src: url("../fonts/proxima_nova_light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima_nova_light-webfont.woff") format("woff"), url("../fonts/proxima_nova_light-webfont.ttf") format("truetype"), url("../fonts/proxima_nova_light-webfont.svg#proxima_novalight") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
+@font-face { font-family: 'proxima_novalight'; src: url("../fonts/proxima_nova_light-webfont.eot"); src: url("../fonts/proxima_nova_light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima_nova_light-webfont.woff") format("woff"), url("../fonts/proxima_nova_light-webfont.ttf") format("truetype"), url("../fonts/proxima_nova_light-webfont.svg#proxima_novalight") format("svg"); font-weight: normal; font-style: normal; }
 
-@font-face {
-  font-family: 'proxima_novaregular_italic';
-  src: url("../fonts/proxima_nova_reg_it-webfont.eot");
-  src: url("../fonts/proxima_nova_reg_it-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima_nova_reg_it-webfont.woff") format("woff"), url("../fonts/proxima_nova_reg_it-webfont.ttf") format("truetype"), url("../fonts/proxima_nova_reg_it-webfont.svg#proxima_novaregular_italic") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
+@font-face { font-family: 'proxima_novaregular_italic'; src: url("../fonts/proxima_nova_reg_it-webfont.eot"); src: url("../fonts/proxima_nova_reg_it-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima_nova_reg_it-webfont.woff") format("woff"), url("../fonts/proxima_nova_reg_it-webfont.ttf") format("truetype"), url("../fonts/proxima_nova_reg_it-webfont.svg#proxima_novaregular_italic") format("svg"); font-weight: normal; font-style: normal; }
 
-@font-face {
-  font-family: 'proxima_nova_rgregular';
-  src: url("../fonts/proxima_nova_reg-webfont.eot");
-  src: url("../fonts/proxima_nova_reg-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima_nova_reg-webfont.woff") format("woff"), url("../fonts/proxima_nova_reg-webfont.ttf") format("truetype"), url("../fonts/proxima_nova_reg-webfont.svg#proxima_nova_rgregular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
+@font-face { font-family: 'proxima_nova_rgregular'; src: url("../fonts/proxima_nova_reg-webfont.eot"); src: url("../fonts/proxima_nova_reg-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima_nova_reg-webfont.woff") format("woff"), url("../fonts/proxima_nova_reg-webfont.ttf") format("truetype"), url("../fonts/proxima_nova_reg-webfont.svg#proxima_nova_rgregular") format("svg"); font-weight: normal; font-style: normal; }
 
-@font-face {
-  font-family: 'proxima_novasemibold_italic';
-  src: url("../fonts/proxima_nova_sbold_it-webfont.eot");
-  src: url("../fonts/proxima_nova_sbold_it-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima_nova_sbold_it-webfont.woff") format("woff"), url("../fonts/proxima_nova_sbold_it-webfont.ttf") format("truetype"), url("../fonts/proxima_nova_sbold_it-webfont.svg#proxima_novasemibold_italic") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
+@font-face { font-family: 'proxima_novasemibold_italic'; src: url("../fonts/proxima_nova_sbold_it-webfont.eot"); src: url("../fonts/proxima_nova_sbold_it-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima_nova_sbold_it-webfont.woff") format("woff"), url("../fonts/proxima_nova_sbold_it-webfont.ttf") format("truetype"), url("../fonts/proxima_nova_sbold_it-webfont.svg#proxima_novasemibold_italic") format("svg"); font-weight: normal; font-style: normal; }
 
-@font-face {
-  font-family: 'proxima_novasemibold';
-  src: url("../fonts/proxima_nova_sbold-webfont.eot");
-  src: url("../fonts/proxima_nova_sbold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima_nova_sbold-webfont.woff") format("woff"), url("../fonts/proxima_nova_sbold-webfont.ttf") format("truetype"), url("../fonts/proxima_nova_sbold-webfont.svg#proxima_novasemibold") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
+@font-face { font-family: 'proxima_novasemibold'; src: url("../fonts/proxima_nova_sbold-webfont.eot"); src: url("../fonts/proxima_nova_sbold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima_nova_sbold-webfont.woff") format("woff"), url("../fonts/proxima_nova_sbold-webfont.ttf") format("truetype"), url("../fonts/proxima_nova_sbold-webfont.svg#proxima_novasemibold") format("svg"); font-weight: normal; font-style: normal; }
 
-/* line 46, /Users/jasminechabra/Dropbox/Agilant/agilant_website/sass/style.scss */
-* {
-  -moz-box-sizing: border-box;
-  /* Firexfox */
-  -webkit-box-sizing: border-box;
-  /* Safari/Chrome/iOS/Android */
-  box-sizing: border-box;
-  /* IE */
-}
+* { -moz-box-sizing: border-box; /* Firexfox */ -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */ box-sizing: border-box; /* IE */ }
 
-/* line 53, /Users/jasminechabra/Dropbox/Agilant/agilant_website/sass/style.scss */
-.clearfix:after {
-  content: ".";
-  display: block;
-  clear: both;
-  visibility: hidden;
-  line-height: 0;
-  height: 0;
-}
+.clearfix:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }
 
-/* line 62, /Users/jasminechabra/Dropbox/Agilant/agilant_website/sass/style.scss */
-.clear {
-  clear: both;
-}
+.clear { clear: both; }
 
-/* line 66, /Users/jasminechabra/Dropbox/Agilant/agilant_website/sass/style.scss */
-.alignright {
-  float: right;
-  padding: 0 0 10px 10px;
-}
+.alignright { float: right; padding: 0 0 10px 10px; }
 
-/* line 71, /Users/jasminechabra/Dropbox/Agilant/agilant_website/sass/style.scss */
-.alignleft {
-  float: left;
-  padding: 0 10px 10px 0;
-}
+.alignleft { float: left; padding: 0 10px 10px 0; }
 
-/* line 79, /Users/jasminechabra/Dropbox/Agilant/agilant_website/sass/style.scss */
-body, h1, h2, h3, h4 {
-  font-family: 'proxima_nova_rgregular', sans-serif;
-}
+body, h1, h2, h3, h4 { font-family: 'proxima_nova_rgregular', sans-serif; }
 
-/* line 83, /Users/jasminechabra/Dropbox/Agilant/agilant_website/sass/style.scss */
-body {
-  font-size: 100%;
-  width: 100%;
-  line-height: 1.4;
-}
+body { font-size: 100%; width: 100%; line-height: 1.4; }
 
-/* line 89, /Users/jasminechabra/Dropbox/Agilant/agilant_website/sass/style.scss */
-a {
-  text-decoration: none;
-}
+a { text-decoration: none; }
 
-/* line 93, /Users/jasminechabra/Dropbox/Agilant/agilant_website/sass/style.scss */
-h2 {
-  color: #2e3192;
-  font-family: 'proxima_novasemibold', Helvetica, Arial, sans-serif;
-  font-weight: 800;
-  font-size: 28px;
-  margin-top: 0px;
-}
+h2 { color: #2e3192; font-family: 'proxima_novasemibold', Helvetica, Arial, sans-serif; font-weight: 800; font-size: 28px; margin-top: 0px; }
 
-/* line 100, /Users/jasminechabra/Dropbox/Agilant/agilant_website/sass/style.scss */
-section {
-  padding: 70px 0px;
-}
+section { padding: 70px 0px; }
 
-/* line 104, /Users/jasminechabra/Dropbox/Agilant/agilant_website/sass/style.scss */
-p {
-  font-family: 'proxima_novalight', Helvetica, Arial, sans-serif;
-  font-weight: 200;
-  font-size: 18px;
-}
+p { font-family: 'proxima_novalight', Helvetica, Arial, sans-serif; font-weight: 200; font-size: 18px; }
 
-/* line 111, /Users/jasminechabra/Dropbox/Agilant/agilant_website/sass/style.scss */
-#header {
-  background: url(../images/header_bg2_placeholder.png) no-repeat #0f113a;
-  height: 800px;
-  background-size: 100%;
-}
+#header { background: url(../images/header_bg2_placeholder.png) no-repeat #0f113a; height: 800px; background-size: 100%; }
 
-/* line 118, /Users/jasminechabra/Dropbox/Agilant/agilant_website/sass/style.scss */
-nav li {
-  float: left;
-  padding: 19px;
-  margin-top: 45px;
-}
+nav li { float: left; padding: 19px; margin-top: 45px; }
 
-/* line 122, /Users/jasminechabra/Dropbox/Agilant/agilant_website/sass/style.scss */
-nav li a {
-  text-decoration: none;
-  color: white;
-  letter-spacing: 0.8px;
-}
+nav li a { text-decoration: none; color: white; letter-spacing: 0.8px; }
 
-/* line 128, /Users/jasminechabra/Dropbox/Agilant/agilant_website/sass/style.scss */
-nav #asi-logo {
-  padding-top: 25px;
-}
+nav #asi-logo { padding-top: 25px; }
 
-/* line 130, /Users/jasminechabra/Dropbox/Agilant/agilant_website/sass/style.scss */
-nav #asi-logo img {
-  display: block;
-  width: 120px;
-  height: auto;
-}
+nav #asi-logo img { display: block; width: 120px; height: auto; }
 
-/* line 140, /Users/jasminechabra/Dropbox/Agilant/agilant_website/sass/style.scss */
-.aboutUs {
-  background: url(../images/aboutUs_bg.png) no-repeat #f2f3f6;
-  background-size: 100%;
-  background-position: 30px -75px;
-  height: 600px;
-}
+.aboutUs { background: url(../images/aboutUs_bg.png) no-repeat #f2f3f6; background-size: 100%; background-position: 30px -75px; height: 600px; }
 
-/* line 145, /Users/jasminechabra/Dropbox/Agilant/agilant_website/sass/style.scss */
-.aboutUs .about-content {
-  line-height: 25px;
-  margin-bottom: 40px;
-}
+.aboutUs .about-content { line-height: 25px; margin-bottom: 40px; }
 
-/* line 148, /Users/jasminechabra/Dropbox/Agilant/agilant_website/sass/style.scss */
-.aboutUs .about-content p {
-  color: #2b47ad;
-  font-family: 'proxima_novalight', Helvetica, Arial, sans-serif;
-  font-weight: 200;
-  font-size: 18px;
-}
+.aboutUs .about-content p { color: #2b47ad; font-family: 'proxima_novalight', Helvetica, Arial, sans-serif; font-weight: 200; font-size: 18px; }
 
-/* line 154, /Users/jasminechabra/Dropbox/Agilant/agilant_website/sass/style.scss */
-.aboutUs .aboutInfo {
-  text-align: center;
-}
+.aboutUs .aboutInfo { text-align: center; }
 
-/* line 157, /Users/jasminechabra/Dropbox/Agilant/agilant_website/sass/style.scss */
-.aboutUs .aboutInfo .aboutIcon img {
-  width: 50px;
-}
+.aboutUs .aboutInfo .aboutIcon img { width: 50px; }
 
-/* line 161, /Users/jasminechabra/Dropbox/Agilant/agilant_website/sass/style.scss */
-.aboutUs .aboutInfo .aboutNumber {
-  font-family: 'proxima_novasemibold', Helvetica, Arial, sans-serif;
-  font-weight: 800;
-  font-size: 75px;
-  color: #2e3192;
-}
+.aboutUs .aboutInfo .aboutNumber { font-family: 'proxima_novasemibold', Helvetica, Arial, sans-serif; font-weight: 800; font-size: 75px; color: #2e3192; }
 
-/* line 166, /Users/jasminechabra/Dropbox/Agilant/agilant_website/sass/style.scss */
-.aboutUs .aboutInfo .aboutNumberText {
-  font-family: 'proxima_novalight', Helvetica, Arial, sans-serif;
-  font-weight: 200;
-  font-size: 16px;
-  color: #2e3192;
-}
+.aboutUs .aboutInfo .aboutNumberText { font-family: 'proxima_novalight', Helvetica, Arial, sans-serif; font-weight: 200; font-size: 16px; color: #2e3192; }
 
-/* line 174, /Users/jasminechabra/Dropbox/Agilant/agilant_website/sass/style.scss */
-.ourSolutions {
-  background-color: #2e3192;
-  color: #fff;
-}
+.ourSolutions { background-color: #2e3192; color: #fff; }
 
-/* line 177, /Users/jasminechabra/Dropbox/Agilant/agilant_website/sass/style.scss */
-.ourSolutions h2 {
-  color: #fff;
-}
+.ourSolutions h2 { color: #fff; }
 
-/* line 180, /Users/jasminechabra/Dropbox/Agilant/agilant_website/sass/style.scss */
-.ourSolutions .solution-box {
-  margin-top: 30px;
-}
+.ourSolutions .solution-box { margin-top: 30px; }
 
-/* line 182, /Users/jasminechabra/Dropbox/Agilant/agilant_website/sass/style.scss */
-.ourSolutions .solution-box p {
-  font-size: 15px;
-  padding-right: 50px;
-}
+.ourSolutions .solution-box p { font-size: 15px; padding-right: 50px; }
 
-/* line 187, /Users/jasminechabra/Dropbox/Agilant/agilant_website/sass/style.scss */
-.ourSolutions .solution-box .solutionIcon img {
-  width: 50px;
-}
+.ourSolutions .solution-box .solutionIcon img { width: 50px; }
 
-/* line 192, /Users/jasminechabra/Dropbox/Agilant/agilant_website/sass/style.scss */
-.ourSolutions .solution-box .design_border img {
-  width: 35px;
-}
-
-/*# sourceMappingURL=../css/style.map */
+.ourSolutions .solution-box .design_border img { width: 35px; }
