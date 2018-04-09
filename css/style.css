@@ -30,7 +30,9 @@ section, footer { padding: 70px 0px; }
 
 p { font-family: 'proxima_novalight', Helvetica, Arial, sans-serif; font-weight: 200; font-size: 18px; }
 
-#header { background: url(../images/header_bg2_placeholder.png) no-repeat #0f113a; height: 800px; background-size: 100%; }
+#header { background: url(../images/header_bg2_placeholder.png) no-repeat center center fixed #00051d; height: 800px; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
+
+#header .headerContent { padding: 20px; }
 
 #header .headerContent h1 { font-size: 60px; margin-top: 100px; margin-bottom: 10px; color: #fff; }
 
@@ -48,7 +50,7 @@ nav #asi-logo { padding-top: 25px; }
 
 nav #asi-logo img { display: block; width: 120px; height: auto; }
 
-.aboutUs { background: url(../images/aboutUs_bg.png) no-repeat #f2f3f6; background-size: 100%; }
+.aboutUs { background: url(../images/aboutUs_bg.png) no-repeat center center fixed #f2f3f6; background-size: 100%; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
 
 .aboutUs .about-content { line-height: 25px; margin-bottom: 40px; }
 
@@ -94,7 +96,7 @@ nav #asi-logo img { display: block; width: 120px; height: auto; }
 
 .ourTestimonials { background-color: #fff; }
 
-.ourTestimonials .testimonial-box { background-color: #dee2ef; padding: 30px 30px 60px 30px; }
+.ourTestimonials .testimonial-box { background-color: #dee2ef; padding: 30px 30px 60px 30px; margin-bottom: 70px; margin-top: 20px; }
 
 .ourTestimonials .testimonial-box .quotes { text-align: center; }
 
@@ -106,7 +108,7 @@ nav #asi-logo img { display: block; width: 120px; height: auto; }
 
 .ourTestimonials .testimonial-box .test_author .personTitle { color: #fff; text-align: center; display: block; font-family: 'proxima_novalight', Helvetica, Arial, sans-serif; font-weight: 200; font-size: 11px; }
 
-.ourPartners { background: url(../images/partners_bg.png) no-repeat #2e3192; background-size: 110%; }
+.ourPartners { background: url(../images/partners_bg.png) no-repeat center center fixed #2e3192; background-size: 110%; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
 
 .ourPartners h2 { color: #fff; margin-bottom: 50px; }
 

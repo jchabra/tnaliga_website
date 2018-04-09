@@ -2,15 +2,11 @@
 // 1) Fonts
 // 2) Colors
 // 3) Mixins
-// 4) Media All Queries
-//    a) Setup
-//    b) Base Styles
-//    c) Header & Navigation
-//    d) Footer
-//     e) Other Layout Styles
-// 5) Large Device Media Queries
-// 6) Small Device Media Queries
-
+// 4) Setup
+// 5) Base Styles
+// 6) Header & Navigation
+// 7) Footer
+// 8) Other Layout Styles
 
 //  **** Fonts **** //
 @import 'fonts';
@@ -20,24 +16,24 @@
 
 // **** Mixins **** //
 @mixin imageReplacement {
-text-indent: 100%;
-white-space: nowrap;
-overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 @mixin fontRegular {
-font-family: 'proxima_nova_rgregular', Helvetica, Arial, sans-serif;
-font-weight: normal;
+  font-family: 'proxima_nova_rgregular', Helvetica, Arial, sans-serif;
+  font-weight: normal;
 }
 
 @mixin fontLight {
-font-family: 'proxima_novalight', Helvetica, Arial, sans-serif;
-font-weight: 200;
+  font-family: 'proxima_novalight', Helvetica, Arial, sans-serif;
+  font-weight: 200;
 }
 
 @mixin fontSemiBold {
-font-family: 'proxima_novasemibold', Helvetica, Arial, sans-serif;
-font-weight: 800;
+  font-family: 'proxima_novasemibold', Helvetica, Arial, sans-serif;
+  font-weight: 800;
 }
 
 // **** Setup **** //
@@ -50,206 +46,210 @@ box-sizing: border-box; /* IE */
 }
 
 .clear {
-clear: both;
+  clear: both;
 }
 
 .alignright {
-float: right; 
-padding: 0 0 10px 10px;
+  float: right; 
+  padding: 0 0 10px 10px;
 }
 
 .alignleft {
-float: left; 
-padding: 0 10px 10px 0;
+  float: left; 
+  padding: 0 10px 10px 0;
 }
 
 
 // **** --------------- BASE STYLES ----------------- *****//
 
 body, h1, h2, h3, h4 {
-font-family: 'proxima_nova_rgregular', sans-serif;
+  font-family: 'proxima_nova_rgregular', sans-serif;
 }
 
 body {
-font-size: 100%;
-width: 100%;
-line-height: 1.4;
+  font-size: 100%;
+  width: 100%;
+  line-height: 1.4;
 }
 
 a {
-text-decoration: none;
+  text-decoration: none;
 }
 
 h2 {
-color: $dark-blue;
-@include fontSemiBold;
-font-size: 28px;
-margin-top: 0px;
+  color: $dark-blue;
+  @include fontSemiBold;
+  font-size: 28px;
+  margin-top: 0px;
 }
 
 section, footer {
-padding: 70px 0px;
+  padding: 70px 0px;
 }
 
 p {
-@include fontLight;
-font-size: 18px;
+  @include fontLight;
+  font-size: 18px;
 }
-
 
 // ****  HEADER & NAVIGATION ****//
 #header {
-background: url(../images/header_bg2_placeholder.png) no-repeat $really-dark-blue;
-height: 800px;
-background-size: 100%;
-.headerContent {
-h1 {
-font-size: 60px;
-margin-top: 100px;
-margin-bottom: 10px;
-color: $white;
-}
-h5 {
-font-size: 40px;
-color: $white;
-margin-top: 5px;
-margin-bottom: 40px;
-@include fontLight;
-}
-a.learnMore {
-background-color: $red-pink;
-border-radius: 30px;
-padding: 13px 7px;
-max-width: 180px;
-display: block;
-color: $white;
-display: block;
-text-align: center;
-&:hover {
-background-color: $red-pink-dark;
-}
-}
-}
+  background: url(../images/header_bg2_placeholder.png) no-repeat center center fixed $blue-black;
+  height: 800px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  .headerContent {
+    padding: 20px;
+    h1 {
+      font-size: 60px;
+      margin-top: 100px;
+      margin-bottom: 10px;
+      color: $white;
+    }
+    h5 {
+      font-size: 40px;
+      color: $white;
+      margin-top: 5px;
+      margin-bottom: 40px;
+      @include fontLight;
+    }
+    a.learnMore {
+      background-color: $red-pink;
+      border-radius: 30px;
+      padding: 13px 7px;
+      max-width: 180px;
+      display: block;
+      color: $white;
+      display: block;
+      text-align: center;
+      &:hover {
+        background-color: $red-pink-dark;
+      }
+    }
+  }
 }
 
 nav {
-li {
-float: left;
-padding: 19px;
-margin-top: 45px;
-a {
-text-decoration: none;
-color: white;
-letter-spacing: 0.8px;
-}
-}
-#asi-logo {
-padding-top: 25px;
-img {
-display: block;
-width: 120px;
-height: auto;
-}
-}
+  li {
+    float: left;
+    padding: 19px;
+    margin-top: 45px;
+    a {
+      text-decoration: none;
+      color: white;
+      letter-spacing: 0.8px;
+    }
+  }
+  #asi-logo {
+    padding-top: 25px;
+    img {
+      display: block;
+      width: 120px;
+      height: auto;
+    }
+  }
 }
 
 // **** SECTIONS **** //
-
 .aboutUs {
-background: url(../images/aboutUs_bg.png) no-repeat $white-blue;
-background-size: 100%;
-// background-position: 30px -75px;
-// height: 600px;
-.about-content {
-line-height: 25px;
-margin-bottom: 40px;
-p {
-color: $main-blue;
-@include fontLight;
-font-size: 18px;
-}
-}
-.aboutInfo {
-text-align: center;
-margin-bottom: 40px;
-.aboutIconSection {
-.aboutIcon {
-img {
-width: 50px;
-}
-}
-.design_border {
-img {
-width: 35px;
-}
-}
-&.mapIcon {
-margin-left: 90px; 
-}
-&.consultingIcon {
-margin-left: 140px; 
-}
-&.calendarIcon {
-margin-left: 47px; 
-}
-}//.aboutIconSection
-.aboutNumber {
-@include fontSemiBold;
-font-size: 75px;
-color: $dark-blue;
-}
-.aboutNumberText {
-@include fontLight;
-font-size: 16px;
-color: $dark-blue;
-}
-}
+  background: url(../images/aboutUs_bg.png) no-repeat center center fixed $white-blue;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  .about-content {
+    line-height: 25px;
+    margin-bottom: 40px;
+    p {
+      color: $main-blue;
+      @include fontLight;
+      font-size: 18px;
+    }
+  }
+  .aboutInfo {
+    text-align: center;
+    margin-bottom: 40px;
+    .aboutIconSection {
+      .aboutIcon {
+        img {
+          width: 50px;
+        }
+      }
+      .design_border {
+        img {
+          width: 35px;
+        }
+      }
+      &.mapIcon {
+        margin-left: 90px; 
+      }
+      &.consultingIcon {
+        margin-left: 140px; 
+      }
+      &.calendarIcon {
+        margin-left: 47px; 
+      }
+    }//.aboutIconSection
+    .aboutNumber {
+      @include fontSemiBold;
+      font-size: 75px;
+      color: $dark-blue;
+    }
+    .aboutNumberText {
+      @include fontLight;
+      font-size: 16px;
+      color: $dark-blue;
+    }
+  }
 }//.aboutUs
 
 .ourSolutions {
-background-color: $dark-blue;
-color: $white;
-h2 {
-color: $white;
-}
-.solution-box {
-margin-top: 30px;
-p {
-font-size: 15px;
-padding-right: 50px;
-}
-.solutionIcon {
-img {
-width: 50px;
-}
-}
-.design_border {
-img {
-width: 35px;
-}
-}
-}//.solution-box
+  background-color: $dark-blue;
+  color: $white;
+  h2 {
+    color: $white;
+  }
+  .solution-box {
+    margin-top: 30px;
+    p {
+      font-size: 15px;
+      padding-right: 50px;
+    }
+    .solutionIcon {
+      img {
+        width: 50px;
+      }
+    }
+    .design_border {
+      img {
+        width: 35px;
+      }
+    }
+  }//.solution-box
 }//.ourSolutions
 
 .ourVerticals {
-background-color: $white-blue;
-.vertical-box {
-margin-top: 30px;
-p {
-font-size: 15px;
-padding-right: 50px;
-}
-.verticalIcon {
-img {
-  width: 50px;
-}
-}
-.design_border {
-img {
-  width: 35px;
-}
-}
-}//.solution-box
+  background-color: $white-blue;
+  .vertical-box {
+    margin-top: 30px;
+    p {
+      font-size: 15px;
+      padding-right: 50px;
+    }
+    .verticalIcon {
+      img {
+        width: 50px;
+      }
+    }
+    .design_border {
+      img {
+        width: 35px;
+      }
+    }
+  }//.solution-box
 }//.ourVerticals
 
 .ourTestimonials {
@@ -257,6 +257,8 @@ background-color: $white;
 .testimonial-box {
   background-color: $blue-grey;
   padding: 30px 30px 60px 30px;
+  margin-bottom: 70px;
+  margin-top: 20px;
   .quotes {
     text-align: center;
     img {
@@ -291,8 +293,12 @@ background-color: $white;
 }
 
 .ourPartners {
-  background: url(../images/partners_bg.png) no-repeat $dark-blue;
+  background: url(../images/partners_bg.png) no-repeat center center fixed $dark-blue;
   background-size: 110%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   h2 {
     color: $white;
     margin-bottom: 50px;
@@ -322,6 +328,7 @@ background-color: $white;
   }
 }
 
+// **** FOOTER **** //
 footer {
   font-size: 14px;
   .footer_heading {
@@ -339,7 +346,3 @@ footer {
     color: $blue-grey-dark;
   }
 }
-
-
-
-// **** FOOTER **** //
