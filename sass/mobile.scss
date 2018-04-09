@@ -46,7 +46,9 @@
 
 @media screen and (max-width: 767px) {
 #header {
-	height: 700px;
+	background: url(../images/header_bg2_placeholder.png) no-repeat 72% center fixed #00051d;
+    height: 700px;
+    background-size: 300%;
 	nav {
 		li {
 			margin-top: 2px;
