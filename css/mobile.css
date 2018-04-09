@@ -15,4 +15,6 @@
   #header .headerContent { text-align: center; }
   #header .headerContent h1 { font-size: 50px; margin-top: 60px; }
   #header .headerContent h5 { font-size: 24px; }
-  #header .headerContent .learnMore { margin-left: 22px; } }
+  #header .headerContent .learnMore { margin-left: 22px; }
+  .aboutUs { background: url(../images/aboutUs_bg.png) no-repeat 63% center #f2f3f6; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
+  .ourPartners { background: url(../images/partners_bg.png) no-repeat 42% center #2e3192; background-size: 110%; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; } }

@@ -46,9 +46,9 @@
 
 @media screen and (max-width: 767px) {
 #header {
-	background: url(../images/header_bg2_placeholder.png) no-repeat 72% center #00051d;
-    height: 700px;
-    background-size: 300%;
+	background: url(../images/header_bg2_placeholder.png) no-repeat 72% center $blue-black;
+	height: 700px;
+	background-size: 300%;
 	nav {
 		li {
 			margin-top: 2px;
@@ -68,15 +68,31 @@
 		.learnMore {
 			margin-left: 22px;
 		}
-	}//.headerContent
-}//#header
-} // media query min-width 767px
+		}//.headerContent
+		}//#header
 
-	@media screen and (max-width: 758px) {
+		.aboutUs {
+			background: url(../images/aboutUs_bg.png) no-repeat 63% center #f2f3f6;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
+		.ourPartners {
+			background: url(../images/partners_bg.png) no-repeat 42% center $dark-blue;
+			background-size: 110%;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
+		} // media query min-width 767px
 
-}
+		@media screen and (max-width: 758px) {
 
-@media screen and (max-width: 740px) {
+	}
+
+	@media screen and (max-width: 740px) {
 
 }
 
