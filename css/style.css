@@ -42,7 +42,7 @@ p { font-family: 'proxima_novalight', Helvetica, Arial, sans-serif; font-weight:
 
 #header .headerContent a.learnMore:hover { background-color: #f92116; }
 
-nav li { float: left; padding: 19px; margin-top: 45px; }
+nav li { float: left; padding: 19px; margin-top: 45px; text-align: center; }
 
 nav li a { text-decoration: none; color: white; letter-spacing: 0.8px; }
 
