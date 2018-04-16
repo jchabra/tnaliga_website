@@ -142,9 +142,9 @@ footer .locations_list { color: #818bac; }
 
 .aboutUs-page #header { height: 500px; text-align: center; }
 
-.aboutUs-page .exec-profile { padding-left: 0px; padding-right: 20px; }
+.aboutUs-page .exec-profile { padding-left: 0px; padding-right: 20px; padding-bottom: 40px; }
 
-.aboutUs-page .exec-profile h3 { margin-bottom: 2px; }
+.aboutUs-page .exec-profile h3 { margin-bottom: 2px; margin-top: 5px; }
 
 .aboutUs-page .exec-profile span { font-family: 'proxima_novalight', Helvetica, Arial, sans-serif; font-weight: 200; font-size: 14px; }
 
