@@ -18,7 +18,7 @@
 
 .alignleft { float: left; padding: 0 10px 10px 0; }
 
-body, h1, h2, h3, h4 { font-family: 'proxima_nova_rgregular', sans-serif; }
+body, h1, h2, h3, h4 { font-family: 'proxima_nova_rgregular', sans-serif; color: #00051d; }
 
 body { font-size: 100%; width: 100%; line-height: 1.4; }
 
@@ -44,7 +44,7 @@ p { font-family: 'proxima_novalight', Helvetica, Arial, sans-serif; font-weight:
 
 nav li { float: left; padding: 19px; margin-top: 45px; text-align: center; }
 
-nav li a { text-decoration: none; color: white; letter-spacing: 0.8px; }
+nav li a { text-decoration: none; color: white; letter-spacing: 3px; }
 
 nav #asi-logo { padding-top: 25px; }
 
@@ -54,7 +54,7 @@ nav #asi-logo img { display: block; width: 120px; height: auto; }
 
 .aboutUs .about-content { line-height: 25px; margin-bottom: 40px; }
 
-.aboutUs .about-content p { color: #2b47ad; font-family: 'proxima_novalight', Helvetica, Arial, sans-serif; font-weight: 200; font-size: 18px; }
+.aboutUs .about-content p { color: #00051d; font-family: 'proxima_novalight', Helvetica, Arial, sans-serif; font-weight: 200; font-size: 18px; }
 
 .aboutUs .aboutInfo { text-align: center; margin-bottom: 40px; }
 
@@ -74,7 +74,7 @@ nav #asi-logo img { display: block; width: 120px; height: auto; }
 
 .ourSolutions { background-color: #2e3192; color: #fff; }
 
-.ourSolutions h2 { color: #fff; }
+.ourSolutions h2, .ourSolutions h3 { color: #fff; }
 
 .ourSolutions .solution-box { margin-top: 30px; }
 
@@ -84,13 +84,19 @@ nav #asi-logo img { display: block; width: 120px; height: auto; }
 
 .ourSolutions .solution-box .design_border img { width: 35px; }
 
-.ourVerticals { background-color: #f2f3f6; }
+.ourVerticals { background-color: #f2f3f6; color: #00051d; }
 
 .ourVerticals .vertical-box { margin-top: 30px; }
 
 .ourVerticals .vertical-box p { font-size: 15px; padding-right: 50px; }
 
 .ourVerticals .vertical-box .verticalIcon img { width: 50px; }
+
+.ourVerticals .vertical-box .verticalIcon img.lifeSciences-icon { width: 25px; }
+
+.ourVerticals .vertical-box .verticalIcon img.education-icon { width: 34px; }
+
+.ourVerticals .vertical-box .verticalIcon img.government-icon { width: 40px; }
 
 .ourVerticals .vertical-box .design_border img { width: 35px; }
 
@@ -112,7 +118,7 @@ nav #asi-logo img { display: block; width: 120px; height: auto; }
 
 .ourPartners h2 { color: #fff; margin-bottom: 50px; }
 
-.ourPartners .partner_logo img { display: block; margin: auto; margin-bottom: 50px; max-height: 65px; }
+.ourPartners .partner_logo img { display: block; margin: auto; margin-bottom: 50px; max-height: 50px; }
 
 .ourPartners .partner_logo.vmware { margin-top: 20px; }
 
@@ -133,3 +139,15 @@ footer .contact_info { color: #818bac; font-family: 'proxima_novalight', Helveti
 footer .contact_info b { font-family: 'proxima_novasemibold', Helvetica, Arial, sans-serif; font-weight: 800; }
 
 footer .locations_list { color: #818bac; }
+
+.aboutUs-page #header { height: 500px; text-align: center; }
+
+.aboutUs-page .exec-profile { padding-left: 0px; padding-right: 20px; }
+
+.aboutUs-page .exec-profile h3 { margin-bottom: 2px; }
+
+.aboutUs-page .exec-profile span { font-family: 'proxima_novalight', Helvetica, Arial, sans-serif; font-weight: 200; font-size: 14px; }
+
+.aboutUs-page .exec-profile img { width: 100%; }
+
+.aboutUs-page footer { background-color: #f2f3f6; }
