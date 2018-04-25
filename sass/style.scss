@@ -16,24 +16,24 @@
 
 // **** Mixins **** //
 @mixin imageReplacement {
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
+text-indent: 100%;
+white-space: nowrap;
+overflow: hidden;
 }
 
 @mixin fontRegular {
-  font-family: 'proxima_nova_rgregular', Helvetica, Arial, sans-serif;
-  font-weight: normal;
+font-family: 'proxima_nova_rgregular', Helvetica, Arial, sans-serif;
+font-weight: normal;
 }
 
 @mixin fontLight {
-  font-family: 'proxima_novalight', Helvetica, Arial, sans-serif;
-  font-weight: 200;
+font-family: 'proxima_novalight', Helvetica, Arial, sans-serif;
+font-weight: 200;
 }
 
 @mixin fontSemiBold {
-  font-family: 'proxima_novasemibold', Helvetica, Arial, sans-serif;
-  font-weight: 800;
+font-family: 'proxima_novasemibold', Helvetica, Arial, sans-serif;
+font-weight: 800;
 }
 
 // **** Setup **** //
@@ -136,12 +136,20 @@ nav {
   li {
     float: left;
     padding: 19px;
-    margin-top: 45px;
+    margin-top: 50px;
     text-align: center;
     a {
       text-decoration: none;
       color: white;
-      letter-spacing: 3px;
+      letter-spacing: 2.5px;
+      padding-bottom: 10px;
+      padding-left: 2px;
+      padding-right: 2px;
+      font-size: 15px;
+      &:hover {
+        transition: border-bottom 0.5s ease;
+        border-bottom: 3px solid $main-blue-light;
+      }
     }
   }
   #asi-logo {
@@ -152,248 +160,249 @@ nav {
       height: auto;
     }
   }
-}
+  }//nav
 
-// **** SECTIONS **** //
-.aboutUs {
-  background: url(../images/aboutUs_bg.png) no-repeat center center fixed $white-blue;
-  background-size: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  .about-content {
-    line-height: 25px;
-    margin-bottom: 40px;
-    p {
-      color: $blue-black;
-      @include fontLight;
-      font-size: 18px;
-    }
-  }
-  .aboutInfo {
-    text-align: center;
-    margin-bottom: 40px;
-    .aboutIconSection {
-      .aboutIcon {
-        img {
-          width: 50px;
-        }
-      }
-      .design_border {
-        img {
-          width: 35px;
-        }
-      }
-      &.mapIcon {
-        margin-left: 90px; 
-      }
-      &.consultingIcon {
-        margin-left: 140px; 
-      }
-      &.calendarIcon {
-        margin-left: 47px; 
-      }
-    }//.aboutIconSection
-    .aboutNumber {
-      @include fontSemiBold;
-      font-size: 75px;
-      color: $dark-blue;
-    }
-    .aboutNumberText {
-      @include fontLight;
-      font-size: 16px;
-      color: $dark-blue;
-    }
-  }
-}//.aboutUs
-
-.ourSolutions {
-  background-color: $dark-blue;
-  color: $white;
-  h2, h3 {
-    color: $white;
-  }
-  .solution-box {
-    margin-top: 30px;
-    p {
-      font-size: 15px;
-      padding-right: 50px;
-    }
-    .solutionIcon {
-      img {
-        width: 50px;
+  // **** SECTIONS **** //
+  .aboutUs {
+    background: url(../images/aboutUs_bg.png) no-repeat center center fixed $white-blue;
+    background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    .about-content {
+      line-height: 25px;
+      margin-bottom: 40px;
+      p {
+        color: $blue-black;
+        @include fontLight;
+        font-size: 18px;
       }
     }
-    .design_border {
-      img {
-        width: 35px;
-      }
-    }
-  }//.solution-box
-}//.ourSolutions
-
-.ourVerticals {
-  background-color: $white-blue;
-  color: $blue-black;
-  .vertical-box {
-    margin-top: 30px;
-    p {
-      font-size: 15px;
-      padding-right: 50px;
-    }
-    .verticalIcon {
-      img {
-        width: 50px;
-        &.lifeSciences-icon {
-          width: 25px;
-        }
-        &.education-icon {
-          width: 34px;
-        }
-        &.government-icon {
-          width: 40px;
-        }
-      }
-    }
-    .design_border {
-      img {
-        width: 35px;
-      }
-    }
-  }//.solution-box
-}//.ourVerticals
-
-.ourTestimonials {
-background-color: $white;
-.testimonial-box {
-  background-color: $blue-grey;
-  padding: 30px 30px 60px 30px;
-  margin-bottom: 70px;
-  margin-top: 20px;
-  .quotes {
-    text-align: center;
-    img {
-      width: 50px;
-    }
-  }
-  .test_author {
-    background-color: $main-blue-light;
-    border-radius: 30px;
-    padding: 10px 7px;
-    max-width: 250px;
-    display: block;
-    margin: auto;
-    margin-bottom: -81px;
-    margin-top: 50px;
-    border-bottom: 2px solid #ff3c32;
-    .personName {
-      color: $white;
+    .aboutInfo {
       text-align: center;
-      display:block;
-      font-size: 14px;
-    }
-    .personTitle {
-      color: $white;
-      text-align: center;
-      display:block;
-      @include fontLight;
-      font-size: 11px;
-    }
-  }
-  }//.testimonial-box
-}
+      margin-bottom: 40px;
+      .aboutIconSection {
+        .aboutIcon {
+          img {
+            width: 50px;
+          }
+        }
+        .design_border {
+          img {
+            width: 35px;
+          }
+        }
+        &.mapIcon {
+          margin-left: 90px; 
+        }
+        &.consultingIcon {
+          margin-left: 140px; 
+        }
+        &.calendarIcon {
+          margin-left: 47px; 
+        }
+        }//.aboutIconSection
+        .aboutNumber {
+          @include fontSemiBold;
+          font-size: 75px;
+          color: $dark-blue;
+        }
+        .aboutNumberText {
+          @include fontLight;
+          font-size: 16px;
+          color: $dark-blue;
+        }
+      }
+      }//.aboutUs
 
-.ourPartners {
-  background: url(../images/partners_bg.png) no-repeat center center fixed $dark-blue;
-  background-size: 110%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  h2 {
-    color: $white;
-    margin-bottom: 50px;
-  }
-  .partner_logo {
-    img {
-      display: block;
-      margin: auto;
-      margin-bottom: 50px;
-      max-height: 50px;
-    }
-    &.vmware {
-      margin-top: 20px;
-    }
-    &.microsoft {
-      margin-top: 15px;
-    }
-    &.oracle {
-      margin-top: 15px;
-    }
-    &.lexmark {
-      margin-top: 15px;
-    }
-    &.azure {
-      margin-top: 20px;
-    }
-  }
-}
+      .ourSolutions {
+        background: $main-blue-light;
+        background: linear-gradient(180deg, $main-blue-light 0%, $dark-blue 100%);
+        color: $white;
+        h2, h3 {
+          color: $white;
+        }
+        .solution-box {
+          margin-top: 30px;
+          p {
+            font-size: 15px;
+            padding-right: 50px;
+          }
+          .solutionIcon {
+            img {
+              width: 50px;
+            }
+          }
+          .design_border {
+            img {
+              width: 35px;
+            }
+          }
+          }//.solution-box
+          }//.ourSolutions
 
-// **** FOOTER **** //
-footer {
-  font-size: 14px;
-  .footer_heading {
-    color: $dark-blue;
-    @include fontSemiBold;
-  }
-  .contact_info {
-    color: $blue-grey-dark;
-    @include fontLight;
-    b {
-      @include fontSemiBold;
-    }
-  }
-  .locations_list {
-    color: $blue-grey-dark;
-  }
-}
+          .ourVerticals {
+            background-color: $white-blue;
+            color: $blue-black;
+            .vertical-box {
+              margin-top: 30px;
+              p {
+                font-size: 15px;
+                padding-right: 50px;
+              }
+              .verticalIcon {
+                img {
+                  width: 50px;
+                  &.lifeSciences-icon {
+                    width: 25px;
+                  }
+                  &.education-icon {
+                    width: 34px;
+                  }
+                  &.government-icon {
+                    width: 40px;
+                  }
+                }
+              }
+              .design_border {
+                img {
+                  width: 35px;
+                }
+              }
+              }//.solution-box
+              }//.ourVerticals
+
+              .ourTestimonials {
+                background-color: $white;
+                .testimonial-box {
+                  background-color: $blue-grey;
+                  padding: 30px 30px 60px 30px;
+                  margin-bottom: 70px;
+                  margin-top: 20px;
+                  .quotes {
+                    text-align: center;
+                    img {
+                      width: 50px;
+                    }
+                  }
+                  .test_author {
+                    background-color: $main-blue-light;
+                    border-radius: 30px;
+                    padding: 10px 7px;
+                    max-width: 250px;
+                    display: block;
+                    margin: auto;
+                    margin-bottom: -81px;
+                    margin-top: 50px;
+                    border-bottom: 2px solid #ff3c32;
+                    .personName {
+                      color: $white;
+                      text-align: center;
+                      display:block;
+                      font-size: 14px;
+                    }
+                    .personTitle {
+                      color: $white;
+                      text-align: center;
+                      display:block;
+                      @include fontLight;
+                      font-size: 11px;
+                    }
+                  }
+                  }//.testimonial-box
+                }
+
+                .ourPartners {
+                  background: url(../images/partners_bg.png) no-repeat center center fixed $dark-blue;
+                  background-size: 110%;
+                  -webkit-background-size: cover;
+                  -moz-background-size: cover;
+                  -o-background-size: cover;
+                  background-size: cover;
+                  h2 {
+                    color: $white;
+                    margin-bottom: 50px;
+                  }
+                  .partner_logo {
+                    img {
+                      display: block;
+                      margin: auto;
+                      margin-bottom: 50px;
+                      max-height: 50px;
+                    }
+                    &.vmware {
+                      margin-top: 20px;
+                    }
+                    &.microsoft {
+                      margin-top: 15px;
+                    }
+                    &.oracle {
+                      margin-top: 15px;
+                    }
+                    &.lexmark {
+                      margin-top: 15px;
+                    }
+                    &.azure {
+                      margin-top: 20px;
+                    }
+                  }
+                }
+
+                // **** FOOTER **** //
+                footer {
+                  font-size: 14px;
+                  .footer_heading {
+                    color: $dark-blue;
+                    @include fontSemiBold;
+                  }
+                  .contact_info {
+                    color: $blue-grey-dark;
+                    @include fontLight;
+                    b {
+                      @include fontSemiBold;
+                    }
+                  }
+                  .locations_list {
+                    color: $blue-grey-dark;
+                  }
+                }
 
 
 
-// **** ABOUT US PAGE **** //
-.aboutUs-page {
-  #header {
-    height: 500px;
-    text-align: center;
-  }
-  .exec-profile {
-    padding-left: 0px;
-    padding-right: 20px;
-    padding-bottom: 40px;
-    h3 {
-      margin-bottom: 2px;
-      margin-top: 5px;
-    }
-    span {
-      @include fontLight;
-      font-size: 14px;
-    }
-    img {
-      width: 100%;
-    }
-  }
-  footer {
-    background-color: $white-blue;
-  }
-}
+                // **** ABOUT US PAGE **** //
+                .aboutUs-page {
+                  #header {
+                    height: 500px;
+                    text-align: center;
+                  }
+                  .exec-profile {
+                    padding-left: 0px;
+                    padding-right: 20px;
+                    padding-bottom: 40px;
+                    h3 {
+                      margin-bottom: 2px;
+                      margin-top: 5px;
+                    }
+                    span {
+                      @include fontLight;
+                      font-size: 14px;
+                    }
+                    img {
+                      width: 100%;
+                    }
+                  }
+                  footer {
+                    background-color: $white-blue;
+                  }
+                }
 
-// **** OUR SOLUTIONS PAGE ****//
-.ourSolutions-page {
-    #header {
-    height: 500px;
-    text-align: center;
-  }
-}
+                // **** OUR SOLUTIONS PAGE ****//
+                .ourSolutions-page {
+                  #header {
+                    height: 500px;
+                    text-align: center;
+                  }
+                }
 
 

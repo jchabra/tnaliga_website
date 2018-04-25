@@ -42,9 +42,11 @@ p { font-family: 'proxima_novalight', Helvetica, Arial, sans-serif; font-weight:
 
 #header .headerContent a.learnMore:hover { background-color: #f92116; }
 
-nav li { float: left; padding: 19px; margin-top: 45px; text-align: center; }
+nav li { float: left; padding: 19px; margin-top: 50px; text-align: center; }
 
-nav li a { text-decoration: none; color: white; letter-spacing: 3px; }
+nav li a { text-decoration: none; color: white; letter-spacing: 2.5px; padding-bottom: 10px; padding-left: 2px; padding-right: 2px; font-size: 15px; }
+
+nav li a:hover { transition: border-bottom 0.5s ease; border-bottom: 3px solid #425cdb; }
 
 nav #asi-logo { padding-top: 25px; }
 
@@ -72,7 +74,7 @@ nav #asi-logo img { display: block; width: 120px; height: auto; }
 
 .aboutUs .aboutInfo .aboutNumberText { font-family: 'proxima_novalight', Helvetica, Arial, sans-serif; font-weight: 200; font-size: 16px; color: #2e3192; }
 
-.ourSolutions { background-color: #2e3192; color: #fff; }
+.ourSolutions { background: #425cdb; background: linear-gradient(180deg, #425cdb 0%, #2e3192 100%); color: #fff; }
 
 .ourSolutions h2, .ourSolutions h3 { color: #fff; }
 

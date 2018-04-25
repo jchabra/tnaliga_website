@@ -19,7 +19,7 @@
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/mobile.css">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+rel="stylesheet">
 <script src="javascripts/modernizr.custom.js"></script>
 <script src="https://use.fontawesome.com/b0c78ef928.js"></script>
 </head>
@@ -33,12 +33,13 @@
           <div id="asi-logo" class="grid-20 mobile-grid-30">
             <a href="index.html"><img src="images/agilant_logo.png"></a>
           </div>
-          <ul class="grid-80 mobile-grid-70">
-            <li class="grid-20 mobile-grid-100"><a href="about.html">ABOUT US</a></li>
-            <li class="grid-25 mobile-grid-100"><a href="#">OUR SOLUTIONS</a></li>
-            <li class="grid-25 mobile-grid-100"><a href="#">OUR PARTNERS</a></li>
-            <li class="grid-15 mobile-grid-100"><a href="#">JOIN US</a></li>
-            <li class="grid-15 mobile-grid-100"><a href="#">CONTACT</a></li>
+          <ul class="grid-80 mobile-grid-70 navlist">
+            <li class="grid-15 mobile-grid-100"><a href="#about" class="navlinks">ABOUT US</a></li>
+            <li class="grid-20 mobile-grid-100"><a href="#solutions" class="navlinks">OUR SOLUTIONS</a></li>
+            <li class="grid-20 mobile-grid-100"><a href="#focus" class="navlinks">OUR FOCUS</a></li>
+            <li class="grid-20 mobile-grid-100"><a href="#partners" class="navlinks">OUR PARTNERS</a></li>
+            <li class="grid-15 mobile-grid-100"><a href="#" class="navlinks">JOIN US</a></li>
+            <li class="grid-10 mobile-grid-100"><a href="#" class="navlinks">CONTACT</a></li>
           </ul>
         </nav>
         <div class="headerContent">
@@ -51,7 +52,7 @@
     <!-- ******** End of Header and Nav ******** -->
 
     <!-- ******** ABOUT US ******** -->
-    <section class="grid-100 aboutUs">
+    <section class="grid-100 aboutUs" id="about">
       <div class="grid-container">
         <div class="grid-55 suffix-45 about-content">
           <h2>About Us</h2>
@@ -92,7 +93,7 @@
       </div><!-- //.container-->
     </section>
     <!-- ******** Our Solutions ******** -->
-    <section class="grid-100 ourSolutions">
+    <section class="grid-100 ourSolutions" id="solutions">
       <div class="grid-container">
         <div class="grid-55 suffix-45">
           <h2>Our Solutions</h2>
@@ -162,7 +163,7 @@
       </div><!-- //.container-->
     </section>
     <!-- ******** The Verticals ******** -->
-    <section class="grid-100 ourVerticals">
+    <section class="grid-100 ourVerticals" id="focus">
       <div class="grid-container">
         <div class="grid-55 suffix-45">
           <h2>Our Focus</h2>
@@ -277,63 +278,102 @@
     </div><!-- //.container-->
   </section>
   <!-- ******** Our Partners ******** -->
-  <section class="grid-100 ourPartners">
+  <section class="grid-100 ourPartners" id="partners">
     <div class="grid-container">
       <div class="grid-55 suffix-45">
         <h2>Our Partners</h2>
       </div>
-      <div class="grid-20 partner_logo">
-        <img src="images/partners/hp_logo.png" alt="HP Logo">
-      </div>
-      <div class="grid-20 partner_logo vmware">
-        <img src="images/partners/vmware_logo.png" alt="VMware Logo">
-      </div>
+      <!-- Amazon -->
       <div class="grid-20 partner_logo">
         <img src="images/partners/amazon_logo.png" alt="AWS Logo">
       </div>
-      <div class="grid-20 partner_logo">
-        <img src="images/partners/citrix_logo.png" alt="Citrix Logo">
+      <!-- Azure -->
+      <div class="grid-20 partner_logo azure">
+        <img src="images/partners/azure_logo.png" alt="Azure Logo">
       </div>
-      <div class="grid-20 partner_logo microsoft">
-        <img src="images/partners/microsoft_logo.png" alt="Microsoft Logo">
+      <!-- Nutanix -->
+      <div class="grid-20 partner_logo nutanix">
+        <img src="images/partners/nutanix_logo.png" alt="Nutanix Logo">
       </div>
-      <div class="clear"></div>
-      <div class="grid-20 partner_logo">
-        <img src="images/partners/aruba_logo.png" alt="Aruba Logo">
+      <!-- F5 -->
+      <div class="grid-20 partner_logo f5">
+        <img src="images/partners/f5_logo.png" alt="F5 Logo">
       </div>
-      <div class="grid-20 partner_logo">
-        <img src="images/partners/symantec_logo.png" alt="Symantec Logo">
+      <!-- Riverbed -->
+      <div class="grid-20 partner_logo riverbed">
+        <img src="images/partners/riverbed_logo.png" alt="Riverbed Logo">
       </div>
-      <div class="grid-20 partner_logo oracle">
-        <img src="images/partners/oracle_logo.png" alt="Oracle Logo">
-      </div>
-      <div class="grid-20 partner_logo">
-        <img src="images/partners/apple_logo.png" alt="Apple Logo">
-      </div>
-       <div class="grid-20 partner_logo">
-        <img src="images/partners/apc_logo.png" alt="APC Logo">
-      </div>
+      <!-- HPE -->
       <div class="grid-20 partner_logo">
         <img src="images/partners/hp_enterprise_logo.png" alt="HP Enterprise Logo">
       </div>
+      <!-- Cisco -->
       <div class="grid-20 partner_logo">
-        <img src="images/partners/netapp_logo.png" alt="NetApp Logo">
+        <img src="images/partners/cisco_logo.png" alt="Cisco Enterprise Logo">
       </div>
-      <div class="grid-20 partner_logo lexmark">
-        <img src="images/partners/lexmark_logo.png" alt="Lexmark Logo">
-      </div>
+      <!-- Dell -->
       <div class="grid-20 partner_logo">
-        <img src="images/partners/barracuda_logo.png" alt="Barracuda Logo">
+        <img src="images/partners/dell_logo.png" alt="Dell Enterprise Logo">
       </div>
+      <!-- VMWare -->
+      <div class="grid-20 partner_logo vmware">
+        <img src="images/partners/vmware_logo.png" alt="VMware Logo">
+      </div>
+      <!-- EMC -->
+            <div class="grid-20 partner_logo">
+        <img src="images/partners/emc_logo.png" alt="EMC Logo">
+      </div>
+      <!-- Arista -->
+            <div class="grid-20 partner_logo">
+        <img src="images/partners/arista_logo.png" alt="Arista Logo">
+      </div>
+      <!-- Oracle -->
+      <div class="grid-20 partner_logo oracle">
+        <img src="images/partners/oracle_logo.png" alt="Oracle Logo">
+      </div>
+      <!-- Citrix -->
       <div class="grid-20 partner_logo">
-        <img src="images/partners/motion_logo.png" alt="Motion Logo">
+        <img src="images/partners/citrix_logo.png" alt="Citrix Logo">
       </div>
-      <div class="clear"></div>
+      <!-- Symantec -->
       <div class="grid-20 partner_logo">
-        <img src="images/partners/emerson_logo.png" alt="Emerson Logo">
+        <img src="images/partners/symantec_logo.png" alt="Symantec Logo">
       </div>
-      <div class="grid-20 partner_logo azure">
-        <img src="images/partners/azure_logo.png" alt="Azure Logo">
+      <!-- Cohesity -->
+      <div class="grid-20 partner_logo">
+        <img src="images/partners/cohesity_logo.png" alt="Cohesity Logo">
+      </div>
+      <!-- Palo Alto -->
+      <div class="grid-20 partner_logo">
+        <img src="images/partners/paloalto_logo.png" alt="Palo Alto Networks Logo">
+      </div>
+      <!-- APC -->
+      <div class="grid-20 partner_logo">
+        <img src="images/partners/apc_logo.png" alt="APC Logo">
+      </div>
+      <!-- CheckPoint -->
+      <div class="grid-20 partner_logo">
+        <img src="images/partners/checkpoint_logo.png" alt="Checkpoint Logo">
+      </div>
+      <!-- FireEye -->
+      <div class="grid-20 partner_logo">
+        <img src="images/partners/fireeye_logo.png" alt="FireEye Logo">
+      </div>
+      <!-- RedHat -->
+      <div class="grid-20 partner_logo">
+        <img src="images/partners/redhat_logo.png" alt="RedHat Logo">
+      </div>
+      <!-- Veeam -->
+      <div class="grid-20 partner_logo">
+        <img src="images/partners/veeam_logo.png" alt="Veeam Logo">
+      </div>
+      <!-- Solarwinds -->
+      <div class="grid-20 partner_logo">
+        <img src="images/partners/solarwinds_logo.png" alt="Solarwinds Logo">
+      </div>
+      <!-- RSA -->
+      <div class="grid-20 partner_logo">
+        <img src="images/partners/rsa_logo.png" alt="RSA Logo">
       </div>
     </div><!-- //.container-->
   </section>
