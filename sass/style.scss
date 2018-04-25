@@ -162,247 +162,290 @@ nav {
   }
   }//nav
 
-  // **** SECTIONS **** //
-  .aboutUs {
-    background: url(../images/aboutUs_bg.png) no-repeat center center fixed $white-blue;
-    background-size: 100%;
+// **** SECTIONS **** //
+.aboutUs {
+background: url(../images/aboutUs_bg.png) no-repeat center center fixed $white-blue;
+background-size: 100%;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+.about-content {
+line-height: 25px;
+margin-bottom: 40px;
+p {
+color: $blue-black;
+@include fontLight;
+font-size: 18px;
+}
+}
+.aboutInfo {
+text-align: center;
+margin-bottom: 40px;
+.aboutIconSection {
+.aboutIcon {
+img {
+width: 50px;
+}
+}
+.design_border {
+img {
+width: 35px;
+}
+}
+&.mapIcon {
+margin-left: 90px; 
+}
+&.consultingIcon {
+margin-left: 140px; 
+}
+&.calendarIcon {
+margin-left: 47px; 
+}
+}//.aboutIconSection
+.aboutNumber {
+@include fontSemiBold;
+font-size: 75px;
+color: $dark-blue;
+}
+.aboutNumberText {
+@include fontLight;
+font-size: 16px;
+color: $dark-blue;
+}
+}
+}//.aboutUs
+
+.ourSolutions {
+background: $main-blue-light;
+background: linear-gradient(180deg, $main-blue-light 0%, $dark-blue 100%);
+color: $white;
+h2, h3 {
+color: $white;
+}
+.solution-box {
+margin-top: 30px;
+p {
+font-size: 15px;
+padding-right: 50px;
+}
+.solutionIcon {
+img {
+width: 50px;
+}
+}
+.design_border {
+img {
+width: 35px;
+}
+}
+}//.solution-box
+}//.ourSolutions
+
+.ourVerticals {
+background-color: $white-blue;
+color: $blue-black;
+.vertical-box {
+margin-top: 30px;
+p {
+  font-size: 15px;
+  padding-right: 50px;
+}
+.verticalIcon {
+  img {
+    width: 50px;
+    &.lifeSciences-icon {
+      width: 25px;
+    }
+    &.education-icon {
+      width: 34px;
+    }
+    &.government-icon {
+      width: 40px;
+    }
+  }
+}
+.design_border {
+  img {
+    width: 35px;
+  }
+}
+}//.solution-box
+}//.ourVerticals
+
+.ourTestimonials {
+  background-color: $white;
+  .testimonial-box {
+    background-color: $blue-grey;
+    padding: 30px 30px 60px 30px;
+    margin-bottom: 70px;
+    margin-top: 20px;
+    .quotes {
+      text-align: center;
+      img {
+        width: 50px;
+      }
+    }
+    .test_author {
+      background-color: $main-blue-light;
+      border-radius: 30px;
+      padding: 10px 7px;
+      max-width: 250px;
+      display: block;
+      margin: auto;
+      margin-bottom: -81px;
+      margin-top: 50px;
+      border-bottom: 2px solid #ff3c32;
+      .personName {
+        color: $white;
+        text-align: center;
+        display:block;
+        font-size: 14px;
+      }
+      .personTitle {
+        color: $white;
+        text-align: center;
+        display:block;
+        @include fontLight;
+        font-size: 11px;
+      }
+    }
+    }//.testimonial-box
+  }
+
+  .ourPartners {
+    background: url(../images/partners_bg.png) no-repeat center center fixed $dark-blue;
+    background-size: 110%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    .about-content {
-      line-height: 25px;
-      margin-bottom: 40px;
-      p {
-        color: $blue-black;
-        @include fontLight;
-        font-size: 18px;
+    h2 {
+      color: $white;
+      margin-bottom: 50px;
+    }
+    .partner_logo {
+      img {
+        display: block;
+        margin: auto;
+        margin-bottom: 50px;
+        max-height: 50px;
+      }
+      &.vmware {
+        margin-top: 20px;
+      }
+      &.microsoft {
+        margin-top: 15px;
+      }
+      &.oracle {
+        margin-top: 15px;
+      }
+      &.lexmark {
+        margin-top: 15px;
+      }
+      &.azure {
+        margin-top: 20px;
       }
     }
-    .aboutInfo {
-      text-align: center;
-      margin-bottom: 40px;
-      .aboutIconSection {
-        .aboutIcon {
-          img {
-            width: 50px;
-          }
-        }
-        .design_border {
-          img {
-            width: 35px;
-          }
-        }
-        &.mapIcon {
-          margin-left: 90px; 
-        }
-        &.consultingIcon {
-          margin-left: 140px; 
-        }
-        &.calendarIcon {
-          margin-left: 47px; 
-        }
-        }//.aboutIconSection
-        .aboutNumber {
-          @include fontSemiBold;
-          font-size: 75px;
-          color: $dark-blue;
-        }
-        .aboutNumberText {
-          @include fontLight;
-          font-size: 16px;
-          color: $dark-blue;
-        }
+  }
+
+  // **** FOOTER **** //
+  footer {
+    font-size: 14px;
+    .footer_heading {
+      color: $dark-blue;
+      @include fontSemiBold;
+    }
+    .contact_info {
+      color: $blue-grey-dark;
+      @include fontLight;
+      b {
+        @include fontSemiBold;
       }
-      }//.aboutUs
-
-      .ourSolutions {
-        background: $main-blue-light;
-        background: linear-gradient(180deg, $main-blue-light 0%, $dark-blue 100%);
-        color: $white;
-        h2, h3 {
-          color: $white;
-        }
-        .solution-box {
-          margin-top: 30px;
-          p {
-            font-size: 15px;
-            padding-right: 50px;
-          }
-          .solutionIcon {
-            img {
-              width: 50px;
-            }
-          }
-          .design_border {
-            img {
-              width: 35px;
-            }
-          }
-          }//.solution-box
-          }//.ourSolutions
-
-          .ourVerticals {
-            background-color: $white-blue;
-            color: $blue-black;
-            .vertical-box {
-              margin-top: 30px;
-              p {
-                font-size: 15px;
-                padding-right: 50px;
-              }
-              .verticalIcon {
-                img {
-                  width: 50px;
-                  &.lifeSciences-icon {
-                    width: 25px;
-                  }
-                  &.education-icon {
-                    width: 34px;
-                  }
-                  &.government-icon {
-                    width: 40px;
-                  }
-                }
-              }
-              .design_border {
-                img {
-                  width: 35px;
-                }
-              }
-              }//.solution-box
-              }//.ourVerticals
-
-              .ourTestimonials {
-                background-color: $white;
-                .testimonial-box {
-                  background-color: $blue-grey;
-                  padding: 30px 30px 60px 30px;
-                  margin-bottom: 70px;
-                  margin-top: 20px;
-                  .quotes {
-                    text-align: center;
-                    img {
-                      width: 50px;
-                    }
-                  }
-                  .test_author {
-                    background-color: $main-blue-light;
-                    border-radius: 30px;
-                    padding: 10px 7px;
-                    max-width: 250px;
-                    display: block;
-                    margin: auto;
-                    margin-bottom: -81px;
-                    margin-top: 50px;
-                    border-bottom: 2px solid #ff3c32;
-                    .personName {
-                      color: $white;
-                      text-align: center;
-                      display:block;
-                      font-size: 14px;
-                    }
-                    .personTitle {
-                      color: $white;
-                      text-align: center;
-                      display:block;
-                      @include fontLight;
-                      font-size: 11px;
-                    }
-                  }
-                  }//.testimonial-box
-                }
-
-                .ourPartners {
-                  background: url(../images/partners_bg.png) no-repeat center center fixed $dark-blue;
-                  background-size: 110%;
-                  -webkit-background-size: cover;
-                  -moz-background-size: cover;
-                  -o-background-size: cover;
-                  background-size: cover;
-                  h2 {
-                    color: $white;
-                    margin-bottom: 50px;
-                  }
-                  .partner_logo {
-                    img {
-                      display: block;
-                      margin: auto;
-                      margin-bottom: 50px;
-                      max-height: 50px;
-                    }
-                    &.vmware {
-                      margin-top: 20px;
-                    }
-                    &.microsoft {
-                      margin-top: 15px;
-                    }
-                    &.oracle {
-                      margin-top: 15px;
-                    }
-                    &.lexmark {
-                      margin-top: 15px;
-                    }
-                    &.azure {
-                      margin-top: 20px;
-                    }
-                  }
-                }
-
-                // **** FOOTER **** //
-                footer {
-                  font-size: 14px;
-                  .footer_heading {
-                    color: $dark-blue;
-                    @include fontSemiBold;
-                  }
-                  .contact_info {
-                    color: $blue-grey-dark;
-                    @include fontLight;
-                    b {
-                      @include fontSemiBold;
-                    }
-                  }
-                  .locations_list {
-                    color: $blue-grey-dark;
-                  }
-                }
+    }
+    .locations_list {
+      color: $blue-grey-dark;
+    }
+  }
 
 
 
-                // **** ABOUT US PAGE **** //
-                .aboutUs-page {
-                  #header {
-                    height: 500px;
-                    text-align: center;
-                  }
-                  .exec-profile {
-                    padding-left: 0px;
-                    padding-right: 20px;
-                    padding-bottom: 40px;
-                    h3 {
-                      margin-bottom: 2px;
-                      margin-top: 5px;
-                    }
-                    span {
-                      @include fontLight;
-                      font-size: 14px;
-                    }
-                    img {
-                      width: 100%;
-                    }
-                  }
-                  footer {
-                    background-color: $white-blue;
-                  }
-                }
+  // **** ABOUT US PAGE **** //
+  .aboutUs-page {
+    #header {
+      height: 500px;
+      text-align: center;
+    }
+    .exec-profile {
+      padding-left: 0px;
+      padding-right: 20px;
+      padding-bottom: 40px;
+      h3 {
+        margin-bottom: 2px;
+        margin-top: 5px;
+      }
+      span {
+        @include fontLight;
+        font-size: 14px;
+      }
+      img {
+        width: 100%;
+      }
+    }
+    footer {
+      background-color: $white-blue;
+    }
+  }
 
-                // **** OUR SOLUTIONS PAGE ****//
-                .ourSolutions-page {
-                  #header {
-                    height: 500px;
-                    text-align: center;
-                  }
-                }
+  // **** OUR SOLUTIONS PAGE ****//
+  .ourSolutions-page {
+    #header {
+      height: 500px;
+      text-align: center;
+    }
+  }
+
+// **** RETURN TO TOP ****//
+
+#returntotop {
+  z-index: 9997;
+  position: fixed;
+  bottom: 40%;
+  right: 3.5%;
+  display: none;
+  p {
+    display: block;
+    color: $red-pink;
+    font-size: 24px;
+    cursor: default;
+    line-height: 0;
+  }
+  &:hover {
+    p {
+      color: $white;
+    }
+  }
+}
+
+.homebutton {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  word-spacing: 1px;
+  background-color: none;
+  color: $red-pink;
+  line-height: 42px;
+  width: 40px;
+  height: 40px;
+  border: 2px solid $red-pink;
+  display: block;
+  text-align: center;
+  &:hover {
+    background-color: $red-pink;
+    color: $white;
+  }
+}
 
 

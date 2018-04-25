@@ -155,3 +155,13 @@ footer .locations_list { color: #818bac; }
 .aboutUs-page footer { background-color: #f2f3f6; }
 
 .ourSolutions-page #header { height: 500px; text-align: center; }
+
+#returntotop { z-index: 9997; position: fixed; bottom: 40%; right: 3.5%; display: none; }
+
+#returntotop p { display: block; color: #ff3c32; font-size: 24px; cursor: default; line-height: 0; }
+
+#returntotop:hover p { color: #fff; }
+
+.homebutton { -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; word-spacing: 1px; background-color: none; color: #ff3c32; line-height: 42px; width: 40px; height: 40px; border: 2px solid #ff3c32; display: block; text-align: center; }
+
+.homebutton:hover { background-color: #ff3c32; color: #fff; }
