@@ -34,11 +34,11 @@ p { font-family: 'proxima_novalight', Helvetica, Arial, sans-serif; font-weight:
 
 #header .headerContent { padding: 20px; }
 
-#header .headerContent h1 { font-size: 60px; margin-top: 100px; margin-bottom: 10px; color: #fff; }
+#header .headerContent h3 { font-size: 50px; margin-top: 100px; margin-bottom: 10px; color: #fff; }
 
-#header .headerContent h5 { font-size: 40px; color: #fff; margin-top: 5px; margin-bottom: 40px; font-family: 'proxima_novalight', Helvetica, Arial, sans-serif; font-weight: 200; }
+#header .headerContent h5 { font-size: 20px; color: #fff; margin-top: 5px; margin-bottom: 40px; font-family: 'proxima_novalight', Helvetica, Arial, sans-serif; font-weight: 200; }
 
-#header .headerContent a.learnMore { background-color: #ff3c32; border-radius: 30px; padding: 13px 7px; max-width: 180px; display: block; color: #fff; display: block; text-align: center; }
+#header .headerContent a.learnMore { background-color: #ff3c32; border-radius: 30px; padding: 13px 7px; max-width: 180px; height: 48px; display: block; color: #fff; display: block; text-align: center; }
 
 #header .headerContent a.learnMore:hover { background-color: #f92116; }
 

@@ -4,7 +4,7 @@ $(document).ready(function() {
     var section = $(this).attr("href");
     $("html, body").animate({
       scrollTop: $(section).offset().top
-    }, 1000);
+    }, 1500);
   });
   /*Scroll to top when arrow up clicked BEGIN*/
   $(window).scroll(function() {
@@ -17,7 +17,7 @@ $(document).ready(function() {
   });
   $("#returntotop").click(function(event) {
     event.preventDefault();
-    $("html, body").animate({ scrollTop: 0 }, "slow");
+    $("html, body").animate({ scrollTop: 0 }, 1500);
     return false;
   });
   /*Scroll to top when arrow up clicked END*/
