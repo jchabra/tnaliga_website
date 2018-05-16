@@ -221,6 +221,14 @@ color: $dark-blue;
 background: $main-blue-light;
 background: linear-gradient(180deg, $main-blue-light 0%, $dark-blue 100%);
 color: $white;
+a {
+  text-decoration: underline;
+  color: $white;
+  font-weight: bold;
+  &:hover {
+    color: $red-pink;
+  }
+}
 h2, h3 {
 color: $white;
 }
@@ -246,6 +254,14 @@ width: 35px;
 .ourVerticals {
 background-color: $white-blue;
 color: $blue-black;
+a {
+  text-decoration: underline;
+  color: $main-blue-light;
+  font-weight: bold;
+  &:hover {
+    color: $dark-blue;
+  }
+}
 .vertical-box {
 margin-top: 30px;
 p {
@@ -331,6 +347,23 @@ p {
         margin: auto;
         margin-bottom: 50px;
         max-height: 50px;
+        max-width: 180px;
+      }
+      &.amazon_enterprise {
+        img {
+        }
+      }
+      &.azure {
+        margin-top: 8px;
+        img {
+          margin-bottom: 55px;
+        }
+      }
+      &.nutanix {
+        margin-top: 20px;
+        img {
+          width: 200px;
+        }
       }
       &.vmware {
         margin-top: 20px;
@@ -343,9 +376,6 @@ p {
       }
       &.lexmark {
         margin-top: 15px;
-      }
-      &.azure {
-        margin-top: 20px;
       }
     }
   }

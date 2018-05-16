@@ -1,167 +1,524 @@
-@font-face { font-family: 'proxima_novalight_italic'; src: url("../fonts/proxima_nova_light_it-webfont.eot"); src: url("../fonts/proxima_nova_light_it-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima_nova_light_it-webfont.woff") format("woff"), url("../fonts/proxima_nova_light_it-webfont.ttf") format("truetype"), url("../fonts/proxima_nova_light_it-webfont.svg#proxima_novalight_italic") format("svg"); font-weight: normal; font-style: normal; }
-
-@font-face { font-family: 'proxima_novalight'; src: url("../fonts/proxima_nova_light-webfont.eot"); src: url("../fonts/proxima_nova_light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima_nova_light-webfont.woff") format("woff"), url("../fonts/proxima_nova_light-webfont.ttf") format("truetype"), url("../fonts/proxima_nova_light-webfont.svg#proxima_novalight") format("svg"); font-weight: normal; font-style: normal; }
-
-@font-face { font-family: 'proxima_novaregular_italic'; src: url("../fonts/proxima_nova_reg_it-webfont.eot"); src: url("../fonts/proxima_nova_reg_it-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima_nova_reg_it-webfont.woff") format("woff"), url("../fonts/proxima_nova_reg_it-webfont.ttf") format("truetype"), url("../fonts/proxima_nova_reg_it-webfont.svg#proxima_novaregular_italic") format("svg"); font-weight: normal; font-style: normal; }
-
-@font-face { font-family: 'proxima_nova_rgregular'; src: url("../fonts/proxima_nova_reg-webfont.eot"); src: url("../fonts/proxima_nova_reg-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima_nova_reg-webfont.woff") format("woff"), url("../fonts/proxima_nova_reg-webfont.ttf") format("truetype"), url("../fonts/proxima_nova_reg-webfont.svg#proxima_nova_rgregular") format("svg"); font-weight: normal; font-style: normal; }
-
-@font-face { font-family: 'proxima_novasemibold_italic'; src: url("../fonts/proxima_nova_sbold_it-webfont.eot"); src: url("../fonts/proxima_nova_sbold_it-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima_nova_sbold_it-webfont.woff") format("woff"), url("../fonts/proxima_nova_sbold_it-webfont.ttf") format("truetype"), url("../fonts/proxima_nova_sbold_it-webfont.svg#proxima_novasemibold_italic") format("svg"); font-weight: normal; font-style: normal; }
-
-@font-face { font-family: 'proxima_novasemibold'; src: url("../fonts/proxima_nova_sbold-webfont.eot"); src: url("../fonts/proxima_nova_sbold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima_nova_sbold-webfont.woff") format("woff"), url("../fonts/proxima_nova_sbold-webfont.ttf") format("truetype"), url("../fonts/proxima_nova_sbold-webfont.svg#proxima_novasemibold") format("svg"); font-weight: normal; font-style: normal; }
-
-* { -moz-box-sizing: border-box; /* Firexfox */ -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */ box-sizing: border-box; /* IE */ }
-
-.clear { clear: both; }
-
-.alignright { float: right; padding: 0 0 10px 10px; }
-
-.alignleft { float: left; padding: 0 10px 10px 0; }
-
-body, h1, h2, h3, h4 { font-family: 'proxima_nova_rgregular', sans-serif; color: #00051d; }
-
-body { font-size: 100%; width: 100%; line-height: 1.4; }
-
-a { text-decoration: none; }
-
-h2 { color: #2e3192; font-family: 'proxima_novasemibold', Helvetica, Arial, sans-serif; font-weight: 800; font-size: 28px; margin-top: 0px; }
-
-section, footer { padding: 70px 0px; }
-
-p { font-family: 'proxima_novalight', Helvetica, Arial, sans-serif; font-weight: 200; font-size: 18px; }
-
-#header { background: url(../images/header_bg2_placeholder.png) no-repeat center center fixed #00051d; height: 800px; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
-
-#header .headerContent { padding: 20px; }
-
-#header .headerContent h3 { font-size: 50px; margin-top: 100px; margin-bottom: 10px; color: #fff; }
-
-#header .headerContent h5 { font-size: 20px; color: #fff; margin-top: 5px; margin-bottom: 40px; font-family: 'proxima_novalight', Helvetica, Arial, sans-serif; font-weight: 200; }
-
-#header .headerContent a.learnMore { background-color: #ff3c32; border-radius: 30px; padding: 13px 7px; max-width: 180px; height: 48px; display: block; color: #fff; display: block; text-align: center; }
-
-#header .headerContent a.learnMore:hover { background-color: #f92116; }
-
-nav li { float: left; padding: 19px; margin-top: 50px; text-align: center; }
-
-nav li a { text-decoration: none; color: white; letter-spacing: 2.5px; padding-bottom: 10px; padding-left: 2px; padding-right: 2px; font-size: 15px; }
-
-nav li a:hover { transition: border-bottom 0.5s ease; border-bottom: 3px solid #425cdb; }
-
-nav #asi-logo { padding-top: 25px; }
-
-nav #asi-logo img { display: block; width: 120px; height: auto; }
-
-.aboutUs { background: url(../images/aboutUs_bg.png) no-repeat center center fixed #f2f3f6; background-size: 100%; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
-
-.aboutUs .about-content { line-height: 25px; margin-bottom: 40px; }
-
-.aboutUs .about-content p { color: #00051d; font-family: 'proxima_novalight', Helvetica, Arial, sans-serif; font-weight: 200; font-size: 18px; }
-
-.aboutUs .aboutInfo { text-align: center; margin-bottom: 40px; }
-
-.aboutUs .aboutInfo .aboutIconSection .aboutIcon img { width: 50px; }
-
-.aboutUs .aboutInfo .aboutIconSection .design_border img { width: 35px; }
-
-.aboutUs .aboutInfo .aboutIconSection.mapIcon { margin-left: 90px; }
-
-.aboutUs .aboutInfo .aboutIconSection.consultingIcon { margin-left: 140px; }
-
-.aboutUs .aboutInfo .aboutIconSection.calendarIcon { margin-left: 47px; }
-
-.aboutUs .aboutInfo .aboutNumber { font-family: 'proxima_novasemibold', Helvetica, Arial, sans-serif; font-weight: 800; font-size: 75px; color: #2e3192; }
-
-.aboutUs .aboutInfo .aboutNumberText { font-family: 'proxima_novalight', Helvetica, Arial, sans-serif; font-weight: 200; font-size: 16px; color: #2e3192; }
-
-.ourSolutions { background: #425cdb; background: linear-gradient(180deg, #425cdb 0%, #2e3192 100%); color: #fff; }
-
-.ourSolutions h2, .ourSolutions h3 { color: #fff; }
-
-.ourSolutions .solution-box { margin-top: 30px; }
-
-.ourSolutions .solution-box p { font-size: 15px; padding-right: 50px; }
-
-.ourSolutions .solution-box .solutionIcon img { width: 50px; }
-
-.ourSolutions .solution-box .design_border img { width: 35px; }
-
-.ourVerticals { background-color: #f2f3f6; color: #00051d; }
-
-.ourVerticals .vertical-box { margin-top: 30px; }
-
-.ourVerticals .vertical-box p { font-size: 15px; padding-right: 50px; }
-
-.ourVerticals .vertical-box .verticalIcon img { width: 50px; }
-
-.ourVerticals .vertical-box .verticalIcon img.lifeSciences-icon { width: 25px; }
-
-.ourVerticals .vertical-box .verticalIcon img.education-icon { width: 34px; }
-
-.ourVerticals .vertical-box .verticalIcon img.government-icon { width: 40px; }
-
-.ourVerticals .vertical-box .design_border img { width: 35px; }
-
-.ourTestimonials { background-color: #fff; }
-
-.ourTestimonials .testimonial-box { background-color: #dee2ef; padding: 30px 30px 60px 30px; margin-bottom: 70px; margin-top: 20px; }
-
-.ourTestimonials .testimonial-box .quotes { text-align: center; }
-
-.ourTestimonials .testimonial-box .quotes img { width: 50px; }
-
-.ourTestimonials .testimonial-box .test_author { background-color: #425cdb; border-radius: 30px; padding: 10px 7px; max-width: 250px; display: block; margin: auto; margin-bottom: -81px; margin-top: 50px; border-bottom: 2px solid #ff3c32; }
-
-.ourTestimonials .testimonial-box .test_author .personName { color: #fff; text-align: center; display: block; font-size: 14px; }
-
-.ourTestimonials .testimonial-box .test_author .personTitle { color: #fff; text-align: center; display: block; font-family: 'proxima_novalight', Helvetica, Arial, sans-serif; font-weight: 200; font-size: 11px; }
-
-.ourPartners { background: url(../images/partners_bg.png) no-repeat center center fixed #2e3192; background-size: 110%; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
-
-.ourPartners h2 { color: #fff; margin-bottom: 50px; }
-
-.ourPartners .partner_logo img { display: block; margin: auto; margin-bottom: 50px; max-height: 50px; }
-
-.ourPartners .partner_logo.vmware { margin-top: 20px; }
-
-.ourPartners .partner_logo.microsoft { margin-top: 15px; }
-
-.ourPartners .partner_logo.oracle { margin-top: 15px; }
-
-.ourPartners .partner_logo.lexmark { margin-top: 15px; }
-
-.ourPartners .partner_logo.azure { margin-top: 20px; }
-
-footer { font-size: 14px; }
-
-footer .footer_heading { color: #2e3192; font-family: 'proxima_novasemibold', Helvetica, Arial, sans-serif; font-weight: 800; }
-
-footer .contact_info { color: #818bac; font-family: 'proxima_novalight', Helvetica, Arial, sans-serif; font-weight: 200; }
-
-footer .contact_info b { font-family: 'proxima_novasemibold', Helvetica, Arial, sans-serif; font-weight: 800; }
-
-footer .locations_list { color: #818bac; }
-
-.aboutUs-page #header { height: 500px; text-align: center; }
-
-.aboutUs-page .exec-profile { padding-left: 0px; padding-right: 20px; padding-bottom: 40px; }
-
-.aboutUs-page .exec-profile h3 { margin-bottom: 2px; margin-top: 5px; }
-
-.aboutUs-page .exec-profile span { font-family: 'proxima_novalight', Helvetica, Arial, sans-serif; font-weight: 200; font-size: 14px; }
-
-.aboutUs-page .exec-profile img { width: 100%; }
-
-.aboutUs-page footer { background-color: #f2f3f6; }
-
-.ourSolutions-page #header { height: 500px; text-align: center; }
-
-#returntotop { z-index: 9997; position: fixed; bottom: 40%; right: 3.5%; display: none; }
-
-#returntotop p { display: block; color: #ff3c32; font-size: 24px; cursor: default; line-height: 0; }
-
-#returntotop:hover p { color: #fff; }
-
-.homebutton { -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; word-spacing: 1px; background-color: none; color: #ff3c32; line-height: 42px; width: 40px; height: 40px; border: 2px solid #ff3c32; display: block; text-align: center; }
-
-.homebutton:hover { background-color: #ff3c32; color: #fff; }
+@font-face {
+  font-family: 'proxima_novalight_italic';
+  src: url("../fonts/proxima_nova_light_it-webfont.eot");
+  src: url("../fonts/proxima_nova_light_it-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima_nova_light_it-webfont.woff") format("woff"), url("../fonts/proxima_nova_light_it-webfont.ttf") format("truetype"), url("../fonts/proxima_nova_light_it-webfont.svg#proxima_novalight_italic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'proxima_novalight';
+  src: url("../fonts/proxima_nova_light-webfont.eot");
+  src: url("../fonts/proxima_nova_light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima_nova_light-webfont.woff") format("woff"), url("../fonts/proxima_nova_light-webfont.ttf") format("truetype"), url("../fonts/proxima_nova_light-webfont.svg#proxima_novalight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'proxima_novaregular_italic';
+  src: url("../fonts/proxima_nova_reg_it-webfont.eot");
+  src: url("../fonts/proxima_nova_reg_it-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima_nova_reg_it-webfont.woff") format("woff"), url("../fonts/proxima_nova_reg_it-webfont.ttf") format("truetype"), url("../fonts/proxima_nova_reg_it-webfont.svg#proxima_novaregular_italic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'proxima_nova_rgregular';
+  src: url("../fonts/proxima_nova_reg-webfont.eot");
+  src: url("../fonts/proxima_nova_reg-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima_nova_reg-webfont.woff") format("woff"), url("../fonts/proxima_nova_reg-webfont.ttf") format("truetype"), url("../fonts/proxima_nova_reg-webfont.svg#proxima_nova_rgregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'proxima_novasemibold_italic';
+  src: url("../fonts/proxima_nova_sbold_it-webfont.eot");
+  src: url("../fonts/proxima_nova_sbold_it-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima_nova_sbold_it-webfont.woff") format("woff"), url("../fonts/proxima_nova_sbold_it-webfont.ttf") format("truetype"), url("../fonts/proxima_nova_sbold_it-webfont.svg#proxima_novasemibold_italic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'proxima_novasemibold';
+  src: url("../fonts/proxima_nova_sbold-webfont.eot");
+  src: url("../fonts/proxima_nova_sbold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima_nova_sbold-webfont.woff") format("woff"), url("../fonts/proxima_nova_sbold-webfont.ttf") format("truetype"), url("../fonts/proxima_nova_sbold-webfont.svg#proxima_novasemibold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  -moz-box-sizing: border-box;
+  /* Firexfox */
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box;
+  /* IE */
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px;
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0;
+}
+
+body, h1, h2, h3, h4 {
+  font-family: 'proxima_nova_rgregular', sans-serif;
+  color: #00051d;
+}
+
+body {
+  font-size: 100%;
+  width: 100%;
+  line-height: 1.4;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  color: #2e3192;
+  font-family: 'proxima_novasemibold', Helvetica, Arial, sans-serif;
+  font-weight: 800;
+  font-size: 28px;
+  margin-top: 0px;
+}
+
+section, footer {
+  padding: 70px 0px;
+}
+
+p {
+  font-family: 'proxima_novalight', Helvetica, Arial, sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+}
+
+#header {
+  background: url(../images/header_bg2_placeholder.png) no-repeat center center fixed #00051d;
+  height: 800px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#header .headerContent {
+  padding: 20px;
+}
+
+#header .headerContent h3 {
+  font-size: 50px;
+  margin-top: 100px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+#header .headerContent h5 {
+  font-size: 20px;
+  color: #fff;
+  margin-top: 5px;
+  margin-bottom: 40px;
+  font-family: 'proxima_novalight', Helvetica, Arial, sans-serif;
+  font-weight: 200;
+}
+
+#header .headerContent a.learnMore {
+  background-color: #ff3c32;
+  border-radius: 30px;
+  padding: 13px 7px;
+  max-width: 180px;
+  height: 48px;
+  display: block;
+  color: #fff;
+  display: block;
+  text-align: center;
+}
+
+#header .headerContent a.learnMore:hover {
+  background-color: #f92116;
+}
+
+nav li {
+  float: left;
+  padding: 19px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+nav li a {
+  text-decoration: none;
+  color: white;
+  letter-spacing: 2.5px;
+  padding-bottom: 10px;
+  padding-left: 2px;
+  padding-right: 2px;
+  font-size: 15px;
+}
+
+nav li a:hover {
+  transition: border-bottom 0.5s ease;
+  border-bottom: 3px solid #425cdb;
+}
+
+nav #asi-logo {
+  padding-top: 25px;
+}
+
+nav #asi-logo img {
+  display: block;
+  width: 120px;
+  height: auto;
+}
+
+.aboutUs {
+  background: url(../images/aboutUs_bg.png) no-repeat center center fixed #f2f3f6;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.aboutUs .about-content {
+  line-height: 25px;
+  margin-bottom: 40px;
+}
+
+.aboutUs .about-content p {
+  color: #00051d;
+  font-family: 'proxima_novalight', Helvetica, Arial, sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+}
+
+.aboutUs .aboutInfo {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.aboutUs .aboutInfo .aboutIconSection .aboutIcon img {
+  width: 50px;
+}
+
+.aboutUs .aboutInfo .aboutIconSection .design_border img {
+  width: 35px;
+}
+
+.aboutUs .aboutInfo .aboutIconSection.mapIcon {
+  margin-left: 90px;
+}
+
+.aboutUs .aboutInfo .aboutIconSection.consultingIcon {
+  margin-left: 140px;
+}
+
+.aboutUs .aboutInfo .aboutIconSection.calendarIcon {
+  margin-left: 47px;
+}
+
+.aboutUs .aboutInfo .aboutNumber {
+  font-family: 'proxima_novasemibold', Helvetica, Arial, sans-serif;
+  font-weight: 800;
+  font-size: 75px;
+  color: #2e3192;
+}
+
+.aboutUs .aboutInfo .aboutNumberText {
+  font-family: 'proxima_novalight', Helvetica, Arial, sans-serif;
+  font-weight: 200;
+  font-size: 16px;
+  color: #2e3192;
+}
+
+.ourSolutions {
+  background: #425cdb;
+  background: linear-gradient(180deg, #425cdb 0%, #2e3192 100%);
+  color: #fff;
+}
+
+.ourSolutions a {
+  text-decoration: underline;
+  color: #fff;
+  font-weight: bold;
+}
+
+.ourSolutions a:hover {
+  color: #ff3c32;
+}
+
+.ourSolutions h2, .ourSolutions h3 {
+  color: #fff;
+}
+
+.ourSolutions .solution-box {
+  margin-top: 30px;
+}
+
+.ourSolutions .solution-box p {
+  font-size: 15px;
+  padding-right: 50px;
+}
+
+.ourSolutions .solution-box .solutionIcon img {
+  width: 50px;
+}
+
+.ourSolutions .solution-box .design_border img {
+  width: 35px;
+}
+
+.ourVerticals {
+  background-color: #f2f3f6;
+  color: #00051d;
+}
+
+.ourVerticals a {
+  text-decoration: underline;
+  color: #425cdb;
+  font-weight: bold;
+}
+
+.ourVerticals a:hover {
+  color: #2e3192;
+}
+
+.ourVerticals .vertical-box {
+  margin-top: 30px;
+}
+
+.ourVerticals .vertical-box p {
+  font-size: 15px;
+  padding-right: 50px;
+}
+
+.ourVerticals .vertical-box .verticalIcon img {
+  width: 50px;
+}
+
+.ourVerticals .vertical-box .verticalIcon img.lifeSciences-icon {
+  width: 25px;
+}
+
+.ourVerticals .vertical-box .verticalIcon img.education-icon {
+  width: 34px;
+}
+
+.ourVerticals .vertical-box .verticalIcon img.government-icon {
+  width: 40px;
+}
+
+.ourVerticals .vertical-box .design_border img {
+  width: 35px;
+}
+
+.ourTestimonials {
+  background-color: #fff;
+}
+
+.ourTestimonials .testimonial-box {
+  background-color: #dee2ef;
+  padding: 30px 30px 60px 30px;
+  margin-bottom: 70px;
+  margin-top: 20px;
+}
+
+.ourTestimonials .testimonial-box .quotes {
+  text-align: center;
+}
+
+.ourTestimonials .testimonial-box .quotes img {
+  width: 50px;
+}
+
+.ourTestimonials .testimonial-box .test_author {
+  background-color: #425cdb;
+  border-radius: 30px;
+  padding: 10px 7px;
+  max-width: 250px;
+  display: block;
+  margin: auto;
+  margin-bottom: -81px;
+  margin-top: 50px;
+  border-bottom: 2px solid #ff3c32;
+}
+
+.ourTestimonials .testimonial-box .test_author .personName {
+  color: #fff;
+  text-align: center;
+  display: block;
+  font-size: 14px;
+}
+
+.ourTestimonials .testimonial-box .test_author .personTitle {
+  color: #fff;
+  text-align: center;
+  display: block;
+  font-family: 'proxima_novalight', Helvetica, Arial, sans-serif;
+  font-weight: 200;
+  font-size: 11px;
+}
+
+.ourPartners {
+  background: url(../images/partners_bg.png) no-repeat center center fixed #2e3192;
+  background-size: 110%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.ourPartners h2 {
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+.ourPartners .partner_logo img {
+  display: block;
+  margin: auto;
+  margin-bottom: 50px;
+  max-height: 50px;
+  max-width: 180px;
+}
+
+.ourPartners .partner_logo.azure {
+  margin-top: 8px;
+}
+
+.ourPartners .partner_logo.azure img {
+  margin-bottom: 55px;
+}
+
+.ourPartners .partner_logo.nutanix {
+  margin-top: 20px;
+}
+
+.ourPartners .partner_logo.nutanix img {
+  width: 200px;
+}
+
+.ourPartners .partner_logo.vmware {
+  margin-top: 20px;
+}
+
+.ourPartners .partner_logo.microsoft {
+  margin-top: 15px;
+}
+
+.ourPartners .partner_logo.oracle {
+  margin-top: 15px;
+}
+
+.ourPartners .partner_logo.lexmark {
+  margin-top: 15px;
+}
+
+footer {
+  font-size: 14px;
+}
+
+footer .footer_heading {
+  color: #2e3192;
+  font-family: 'proxima_novasemibold', Helvetica, Arial, sans-serif;
+  font-weight: 800;
+}
+
+footer .contact_info {
+  color: #818bac;
+  font-family: 'proxima_novalight', Helvetica, Arial, sans-serif;
+  font-weight: 200;
+}
+
+footer .contact_info b {
+  font-family: 'proxima_novasemibold', Helvetica, Arial, sans-serif;
+  font-weight: 800;
+}
+
+footer .locations_list {
+  color: #818bac;
+}
+
+.aboutUs-page #header {
+  height: 500px;
+  text-align: center;
+}
+
+.aboutUs-page .exec-profile {
+  padding-left: 0px;
+  padding-right: 20px;
+  padding-bottom: 40px;
+}
+
+.aboutUs-page .exec-profile h3 {
+  margin-bottom: 2px;
+  margin-top: 5px;
+}
+
+.aboutUs-page .exec-profile span {
+  font-family: 'proxima_novalight', Helvetica, Arial, sans-serif;
+  font-weight: 200;
+  font-size: 14px;
+}
+
+.aboutUs-page .exec-profile img {
+  width: 100%;
+}
+
+.aboutUs-page footer {
+  background-color: #f2f3f6;
+}
+
+.ourSolutions-page #header {
+  height: 500px;
+  text-align: center;
+}
+
+#returntotop {
+  z-index: 9997;
+  position: fixed;
+  bottom: 40%;
+  right: 3.5%;
+  display: none;
+}
+
+#returntotop p {
+  display: block;
+  color: #ff3c32;
+  font-size: 24px;
+  cursor: default;
+  line-height: 0;
+}
+
+#returntotop:hover p {
+  color: #fff;
+}
+
+.homebutton {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  word-spacing: 1px;
+  background-color: none;
+  color: #ff3c32;
+  line-height: 42px;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #ff3c32;
+  display: block;
+  text-align: center;
+}
+
+.homebutton:hover {
+  background-color: #ff3c32;
+  color: #fff;
+}
